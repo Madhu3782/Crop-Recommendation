@@ -1,0 +1,179 @@
+.alerts-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.alerts-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+/* Market Trends Section */
+.market-trends-section {
+    margin-bottom: 3rem;
+}
+
+.market-trends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.trend-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.trend-card:hover {
+    transform: translateY(-5px);
+}
+
+.trend-card h3 {
+    margin-top: 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.price-display {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0.5rem 0;
+}
+
+.trend-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.trend-up {
+    color: #27ae60;
+}
+
+.trend-down {
+    color: #c0392b;
+}
+
+.trend-stable {
+    color: #7f8c8d;
+}
+
+.trend-arrow {
+    font-size: 1.2rem;
+}
+
+/* Alerts Management Section */
+.alerts-management {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.create-alert-form {
+    padding-right: 2rem;
+    border-right: 1px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #219150;
+}
+
+/* Active Alerts List */
+.alerts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.alert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.alert-info p {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.alert-info span {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .alerts-management {
+        grid-template-columns: 1fr;
+    }
+
+    .create-alert-form {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 2rem;
+        padding-right: 0;
+    }
+}

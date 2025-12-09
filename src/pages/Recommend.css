@@ -1,0 +1,65 @@
+/* Append this to Dashboard.css or keep usage of Dashboard.css sufficient */
+
+.subtitle {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recommendation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rec-card {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s;
+}
+
+.rec-card:hover {
+    transform: translateY(-2px);
+}
+
+.top-rec {
+    border: 2px solid #4CAF50;
+    background-color: #f0f9f0;
+}
+
+.rank {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #aaa;
+    width: 40px;
+}
+
+.top-rec .rank {
+    color: #4CAF50;
+}
+
+.crop-info h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.rec-price {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.badge {
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-left: auto;
+}
