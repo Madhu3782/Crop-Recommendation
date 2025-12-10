@@ -107,12 +107,59 @@ const Recommend = () => {
                         {/* LOCATION */}
                         <div className="section-header">📍 Location & Weather</div>
                         <div className="form-grid">
-                            <div className="form-group">
-                                <label>State</label>
-                                <select name="state" value={formData.state} onChange={handleChange}>
-                                    {states.map(s => <option key={s}>{s}</option>)}
-                                </select>
-                            </div>
+                            <div className="select-dropdown">
+                                                        <label>State</label>
+                                                        <select
+                                                            name="state"
+                                                            value={formData.state}
+                                                            onChange={handleChange}
+                                                        >
+                                                            {[
+                                                            "Andhra Pradesh",
+                                                            "Arunachal Pradesh",
+                                                            "Assam",
+                                                            "Bihar",
+                                                            "Chhattisgarh",
+                                                            "Goa",
+                                                            "Gujarat",
+                                                            "Haryana",
+                                                            "Himachal Pradesh",
+                                                            "Jharkhand",
+                                                            "Karnataka",
+                                                            "Kerala",
+                                                            "Madhya Pradesh",
+                                                            "Maharashtra",
+                                                            "Manipur",
+                                                            "Meghalaya",
+                                                            "Mizoram",
+                                                            "Nagaland",
+                                                            "Odisha",
+                                                            "Punjab",
+                                                            "Rajasthan",
+                                                            "Sikkim",
+                                                            "Tamil Nadu",
+                                                            "Telangana",
+                                                            "Tripura",
+                                                            "Uttar Pradesh",
+                                                            "Uttarakhand",
+                                                            "West Bengal",
+                                                            "Andaman and Nicobar Islands",
+                                                            "Chandigarh",
+                                                            "Dadra and Nagar Haveli",
+                                                            "Daman and Diu",
+                                                            "Delhi",
+                                                            "Jammu and Kashmir",
+                                                            "Ladakh",
+                                                            "Lakshadweep",
+                                                            "Puducherry"
+                                                            ].map((s, index) => (
+                                                            <option key={index} value={s}>
+                                                                {s}
+                                                            </option>
+                                                            ))}
+                                                        </select>
+                                                        </div>
+
 
                             <div className="form-group">
                                 <label>District / City</label>
@@ -146,6 +193,9 @@ const Recommend = () => {
                                 <input type="number" name="rainfall"
                                     value={formData.rainfall} onChange={handleChange} step="0.1" />
                             </div>
+                            <div className="form-group"><label>Crop (optional)</label>
+                                <input type="text" name="crop" value={formData.crop} onChange={handleChange} placeholder="e.g. Rice" />
+                            </div>
                         </div>
 
                         {/* SOIL NUTRIENTS */}
@@ -163,9 +213,9 @@ const Recommend = () => {
                             <div className="form-group"><label>pH Level</label>
                                 <input type="number" name="pH" value={formData.pH} onChange={handleChange} />
                             </div>
-                            <div className="form-group"><label>Crop (optional)</label>
+                            {/* <div className="form-group"><label>Crop (optional)</label>
                                 <input type="text" name="crop" value={formData.crop} onChange={handleChange} placeholder="e.g. Rice" />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="form-actions" style={{ marginTop: '25px' }}>
