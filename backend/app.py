@@ -241,16 +241,21 @@ def fetch_weather():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# --- NEW: Crop Recommendation Endpoint (Dynamic & Ranked) ---
+# --- NEW: Crop Recommendation + Suitability Check Endpoint ---
 @app.route('/predict', methods=['POST'])
 def predict_crop():
+    """
+    Two modes:
+
+    A) If 'crop' is NOT sent in body  -> return TOP 3 best crops (recommendation mode)
+    B) If 'crop' IS sent              -> return if THAT crop is suitable or not (yes/no mode)
+    """
     if not model_crop:
         return jsonify({'error': 'Crop Model not loaded'}), 500
-        
+
     try:
         data = request.get_json()
-        
-        # Inputs
+
         region = data.get('region')
         try:
             inputs = {
@@ -263,72 +268,99 @@ def predict_crop():
                 'rainfall': float(data.get('rainfall'))
             }
         except (ValueError, TypeError):
-             return jsonify({'result': "Error: Please enter valid numerical values for all fields."})
+            return jsonify({'result': "Error: Please enter valid numerical values for all fields."})
 
-        # Predict Probabilities (ML)
-        # We pass data to model to capture complex relationships (e.g. NPK synergy)
-        input_vector = pd.DataFrame([{
-            'N': inputs['N'], 'P': inputs['P'], 'K': inputs['K'], 'pH': inputs['pH'], 
-            'temperature': inputs['temperature'], 'humidity': inputs['humidity'], 'rainfall': inputs['rainfall'],
+        # Build input row for ML model
+        input_df = pd.DataFrame([{
+            'N': inputs['N'],
+            'P': inputs['P'],
+            'K': inputs['K'],
+            'pH': inputs['pH'],
+            'temperature': inputs['temperature'],
+            'humidity': inputs['humidity'],
+            'rainfall': inputs['rainfall'],
             'region': region
         }])
-        
-        # Get probabilities for all classes
-        probs = model_crop.predict_proba(input_vector)[0]
-        classes = model_crop.classes_
-        
-        # Combine ML Score + Agro Rule Score
+
+        # Get probabilities for all crops from ML model
+        probs = model_crop.predict_proba(input_df)[0]   # e.g. [0.1, 0.5, ...]
+        classes = model_crop.classes_                   # crop names from training
+
+        # ---------- MODE B: Single crop suitability check ----------
+        target_crop_raw = data.get('crop', '').strip()
+        if target_crop_raw:
+            # Case-insensitive match between user input and model classes
+            class_lookup = {c.lower(): c for c in classes}
+            key = target_crop_raw.lower()
+
+            if key not in class_lookup:
+                return jsonify({'result': f"❌ Crop '{target_crop_raw}' not recognized by the model."}), 400
+
+            crop_name = class_lookup[key]                  # canonical name from model
+            idx = list(classes).index(crop_name)
+            ml_conf = probs[idx] * 100                     # 0–100%
+
+            # Agro rule-based score (from SUITABILITY_DICT) – uses temp, rain, NPK, pH
+            agro_score = calculate_match_score(crop_name.title(), inputs)
+            # If crop is not in SUITABILITY_DICT, calculate_match_score returns 50
+
+            # Final combined score
+            final_score = (agro_score * 0.6) + (ml_conf * 0.4)
+
+            suitable = final_score >= 50  # threshold; tune if needed
+
+            if suitable:
+                response_text = (
+                    f"✔ {crop_name} is SUITABLE for {region}.\n"
+                    f"Overall Suitability Score: {int(final_score)}%\n"
+                    f"ML confidence: {ml_conf:.1f}% | Agro suitability: {int(agro_score)}%\n"
+                    f"Reason: Temperature ({inputs['temperature']}°C), "
+                    f"Humidity ({inputs['humidity']}%), and Rainfall ({inputs['rainfall']}mm) "
+                    f"are within acceptable range for {crop_name}."
+                )
+            else:
+                # Suggest top 3 alternative crops as backup
+                ranked = []
+                for i, c in enumerate(classes):
+                    ml_c = probs[i] * 100
+                    agro_c = calculate_match_score(c.title(), inputs)
+                    final_c = (agro_c * 0.6) + (ml_c * 0.4)
+                    ranked.append((c, final_c))
+
+                ranked.sort(key=lambda x: x[1], reverse=True)
+                alternatives = [c for c, s in ranked if c != crop_name][:3]
+                alt_str = ', '.join(alternatives) if alternatives else 'No strong alternatives found'
+
+                response_text = (
+                    f"❌ {crop_name} is NOT suitable for {region}.\n"
+                    f"Overall Suitability Score: {int(final_score)}%\n"
+                    f"ML confidence: {ml_conf:.1f}% | Agro suitability: {int(agro_score)}%\n"
+                    f"Suggested Alternatives: {alt_str}."
+                )
+
+            return jsonify({'result': response_text})
+
+        # ---------- MODE A: General recommendation (no crop provided) ----------
         ranked_crops = []
         for i, crop_name in enumerate(classes):
-            ml_confidence = probs[i] * 100 # 0-100
-            
-            # Skip very low ML confidence to save compute
-            if ml_confidence < 2: 
+            ml_confidence = probs[i] * 100        # 0–100
+            if ml_confidence < 2:
                 continue
-                
-            agro_score = calculate_match_score(crop_name, inputs)
-            
-            # Weighted Final Score: 60% Agro Rules (Safety), 40% ML (Pattern)
-            # This ensures physics/biology (rainfall limits) are respected even if ML overfits
+
+            agro_score = calculate_match_score(crop_name.title(), inputs)
             final_score = (agro_score * 0.6) + (ml_confidence * 0.4)
-            
-            if final_score > 30: # Threshold for "Suitable"
+
+            if final_score > 30:
                 ranked_crops.append({
                     'crop': crop_name,
-                    'score': round(final_score, 0),
+                    'score': round(final_score),
                     'agro_score': agro_score,
                     'ml_score': round(ml_confidence, 1)
                 })
-        
-        # Sort by Final Score Descending
-        ranked_crops.sort(key=lambda x: x['score'], reverse=True)
-        # Optional specific crop validation (Mode B)
-        target_crop = data.get('crop')
-        if target_crop:
-            if target_crop not in classes:
-                return jsonify({'result': f"❌ Crop '{target_crop}' not recognized."}), 400
-            idx = list(classes).index(target_crop)
-            ml_conf = probs[idx] * 100
-            agro = calculate_match_score(target_crop, inputs)
-            final = (agro * 0.6) + (ml_conf * 0.4)
-            if final > 30:
-                response_text = (
-                    f"✔ {target_crop} is suitable for {region}. Score: {int(final)}%\n"
-                    f"Reason: Temperature ({inputs['temperature']}°C), Humidity ({inputs['humidity']}%), "
-                    f"Rainfall ({inputs['rainfall']}mm) match ideal conditions."
-                )
-            else:
-                alternatives = [c['crop'] for c in ranked_crops if c['crop'] != target_crop][:3]
-                alt_str = ', '.join(alternatives) if alternatives else 'No alternatives found'
-                response_text = (
-                    f"❌ {target_crop} is NOT suitable for {region}. Score: {int(final)}%\n"
-                    f"Reason: Agro suitability ({int(agro)}%) is low.\n"
-                    f"Suggested alternatives: {alt_str}."
-                )
-            return jsonify({'result': response_text})
 
-        # General recommendation mode (Mode A)
-        top_crops = ranked_crops[:3]  # Top 3
+        ranked_crops.sort(key=lambda x: x['score'], reverse=True)
+        top_crops = ranked_crops[:3]
+
         if not top_crops:
             response_text = (
                 "❌ No major crop found suitable for these specific conditions.\n"
@@ -339,24 +371,21 @@ def predict_crop():
             list_str = ""
             for i, item in enumerate(top_crops):
                 list_str += f"{i+1}) {item['crop']} — Suitability: {int(item['score'])}%\n"
-            
-            # Reason based on the best crop's ideal range vs actual
+
             best = top_crops[0]
-            reason = (
-                f"Temperature ({inputs['temperature']}°C), Humidity ({inputs['humidity']}%) "
-                f"and Rainfall ({inputs['rainfall']}mm) match ideal conditions for {best['crop']}."
-            )
-            
             response_text = (
                 f"🌾 Best Crops for your conditions:\n"
                 f"{list_str}\n"
-                f"Reason:\n{reason}"
+                f"Reason:\nTemperature ({inputs['temperature']}°C), "
+                f"Humidity ({inputs['humidity']}%), and Rainfall ({inputs['rainfall']}mm) "
+                f"match ideal conditions for {best['crop']}."
             )
 
         return jsonify({'result': response_text})
 
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+
 
 # --- OLD: Price Prediction (Renamed) ---
 @app.route('/predict-price', methods=['POST'])
