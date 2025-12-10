@@ -44,7 +44,7 @@ const Dashboard = () => {
         setPrediction(null);
 
         try {
-            const response = await axios.post('http://localhost:5000/predict', formData);
+            const response = await axios.post('http://localhost:5000/predict-price', formData);
             setPrediction(response.data);
         } catch (err) {
             setError('Failed to fetch prediction. Ensure backend is running.');

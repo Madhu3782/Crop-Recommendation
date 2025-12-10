@@ -314,7 +314,7 @@ const handleDistrictChange = (selectedDistrict) => {
     ))}
 
     {/* ALTERNATIVES */}
-   {/* ALTERNATIVES */}
+
 {result.includes("Suggested Alternatives:") && (
   <div className="alt-container">
     <h4 className="alt-title">🌱 Suggested Alternatives</h4>

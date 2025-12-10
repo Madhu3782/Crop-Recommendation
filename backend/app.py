@@ -11,10 +11,6 @@ import requests
 import threading
 import time
 
-
-
-
-
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
@@ -244,6 +240,35 @@ def fetch_weather():
              
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
+    # These below this helps for the crop recommendation system for the ML Model like getClimate and get season also
+    # the are the helper function
+    
+def get_climate_zone(region):
+    climate_zones = {
+        'Cold/Temperate': ['Jammu and Kashmir', 'Himachal Pradesh', 'Uttarakhand', 'Sikkim'],
+        'Tropical': ['Kerala', 'Tamil Nadu', 'Goa'],
+        'Subtropical': ['Karnataka', 'Andhra Pradesh', 'Telangana', 'Maharashtra'],
+        'Semi-Arid': ['Rajasthan', 'Gujarat'],
+        'Humid': ['West Bengal', 'Assam', 'Meghalaya', 'Mizoram'],
+        'Continental': ['Punjab', 'Haryana', 'Delhi', 'Uttar Pradesh']
+    }
+    for zone, states in climate_zones.items():
+        if region in states:
+            return zone
+    return 'Continental'  # fallback
+def get_season(temp):
+    if temp < 15:
+        return 'Winter'
+    elif temp < 25:
+        return 'Spring/Autumn'
+    elif temp < 35:
+        return 'Summer'
+    else:
+        return 'Extreme_Summer'
+    
+    
+    
 
 # --- NEW: Crop Recommendation + Suitability Check Endpoint ---
 @app.route('/predict', methods=['POST'])
@@ -275,6 +300,8 @@ def predict_crop():
             return jsonify({'result': "Error: Please enter valid numerical values for all fields."})
 
         # Build input row for ML model
+        climate_zone = get_climate_zone(region)
+        season_indicator = get_season(inputs['temperature'])
         input_df = pd.DataFrame([{
             'N': inputs['N'],
             'P': inputs['P'],
@@ -283,7 +310,9 @@ def predict_crop():
             'temperature': inputs['temperature'],
             'humidity': inputs['humidity'],
             'rainfall': inputs['rainfall'],
-            'region': region
+            'region': region,
+            'climate_zone': climate_zone,
+            'season_indicator': season_indicator
         }])
 
         # Get probabilities for all crops from ML model
@@ -391,7 +420,7 @@ def predict_crop():
         return jsonify({'error': str(e)}), 400
 
 
-# --- OLD: Price Prediction (Renamed) ---
+# --- Currently Runnig  Price Prediction (Renamed) ---
 @app.route('/predict-price', methods=['POST'])
 def predict_price():
     if not model_price:
@@ -438,6 +467,8 @@ def predict_price():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+    
+# Analytics
 
 @app.route('/analytics', methods=['GET'])
 def analytics():
@@ -472,6 +503,7 @@ def analytics():
     except Exception as e:
         print(f"Analytics Error: {e}", flush=True)
         return jsonify({'error': str(e)}), 500
+
 
 # Recommendations Endpoint (Original implementation - kept for compatibility)
 @app.route('/recommend-crops-by-price', methods=['POST'])
@@ -558,6 +590,7 @@ def recommend_by_price():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 400
+    
 
 # --- Alerts API Endpoints ---
 @app.route('/alerts', methods=['GET'])
@@ -567,6 +600,7 @@ def get_all_alerts_route():
         return jsonify(alerts)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
 
 @app.route('/alerts', methods=['POST'])
 def create_alert_route():
@@ -584,6 +618,7 @@ def create_alert_route():
         return jsonify({'id': alert_id, 'message': 'Alert created successfully'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
 
 @app.route('/alerts/<int:alert_id>', methods=['DELETE'])
 def remove_alert_route(alert_id):
@@ -592,6 +627,7 @@ def remove_alert_route(alert_id):
         return jsonify({'message': 'Alert deleted'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
 
 @app.route('/market-status', methods=['GET'])
 def market_status_route():
