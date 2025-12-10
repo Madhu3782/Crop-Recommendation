@@ -18,6 +18,27 @@ const Recommend = () => {
     rainfall: '',
     crop: ''
   });
+  const altitudeMap = {
+  "Karnataka": 700,
+  "Kerala": 1000,
+  "Tamil Nadu": 600,
+  "Himachal Pradesh": 1800,
+  "Jammu and Kashmir": 1600,
+  "Maharashtra": 650,
+  "Assam": 150,
+  "Meghalaya": 1300,
+  "Goa": 30
+};
+
+const terrainMap = {
+  "Karnataka": "Plain",
+  "Kerala": "Mountain",
+  "Himachal Pradesh": "Hilly",
+  "Jammu and Kashmir": "Mountain",
+  "Assam": "Hilly",
+  "Meghalaya": "Hilly",
+  "Goa": "Coastal"
+};
 
   const [statesList, setStatesList] = useState([]);
   const [districtsList, setDistrictsList] = useState([]);
@@ -116,16 +137,21 @@ const handleDistrictChange = (selectedDistrict) => {
 
     try {
       const payload = {
-        region: formData.district,
-        N: formData.N,
-        P: formData.P,
-        K: formData.K,
-        pH: formData.pH,
-        temperature: formData.temperature,
-        humidity: formData.humidity,
-        rainfall: formData.rainfall,
-        ...(formData.crop && { crop: formData.crop })
-      };
+  region: formData.state,       // Use STATE, not district
+  N: Number(formData.N),
+  P: Number(formData.P),
+  K: Number(formData.K),
+  pH: Number(formData.pH),
+  temperature: Number(formData.temperature),
+  humidity: Number(formData.humidity),
+  rainfall: Number(formData.rainfall),
+
+  altitude: altitudeMap[formData.state] ?? 600,
+  terrain: terrainMap[formData.state] ?? "Plain",
+  
+  ...(formData.crop && { crop: formData.crop })
+};
+
 
       const res = await axios.post("http://localhost:5000/predict", payload);
       setResult(res.data.result);

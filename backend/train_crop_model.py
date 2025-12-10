@@ -72,28 +72,24 @@ def clean_and_filter_data(df):
     return df_filtered
 
 def add_geographic_features(df):
-    """
-    Add derived features that help model understand climate zones
-    """
-    # Climate zone classification based on region
+    # Climate zone classification
     climate_zones = {
         'Cold/Temperate': ['Jammu and Kashmir', 'Himachal Pradesh', 'Uttarakhand', 'Sikkim'],
-        'Tropical': ['Kerala', 'Tamil Nadu', 'Goa', 'Andaman and Nicobar Islands'],
+        'Tropical': ['Kerala', 'Tamil Nadu', 'Goa'],
         'Subtropical': ['Karnataka', 'Andhra Pradesh', 'Telangana', 'Maharashtra'],
-        'Semi-Arid': ['Rajasthan', 'Gujarat', 'parts of Maharashtra'],
+        'Semi-Arid': ['Rajasthan', 'Gujarat'],
         'Humid': ['West Bengal', 'Assam', 'Meghalaya', 'Mizoram'],
         'Continental': ['Punjab', 'Haryana', 'Delhi', 'Uttar Pradesh']
     }
-    
+
     def get_climate_zone(region):
         for zone, states in climate_zones.items():
-            if any(state in region for state in states):
+            if region in states:
                 return zone
-        return 'Continental'  # Default
-    
+        return 'Continental'
+
     df['climate_zone'] = df['region'].apply(get_climate_zone)
-    
-    # Add season indicator based on temperature
+
     def get_season(temp):
         if temp < 15:
             return 'Winter'
@@ -103,10 +99,37 @@ def add_geographic_features(df):
             return 'Summer'
         else:
             return 'Extreme_Summer'
-    
+
     df['season_indicator'] = df['temperature'].apply(get_season)
-    
+
+    # ---------- ADD ALTITUDE ----------
+    altitude_map = {
+        'Karnataka': 700,
+        'Kerala': 1000,
+        'Jammu and Kashmir': 1600,
+        'Himachal Pradesh': 1800,
+        'Tamil Nadu': 600,
+        'Maharashtra': 650,
+        'Assam': 150,
+        'Meghalaya': 1300,
+        'Goa': 30
+    }
+    df['altitude'] = df['region'].map(altitude_map).fillna(600)
+
+    # ---------- ADD TERRAIN ----------
+    terrain_map = {
+        'Karnataka': 'Plain',
+        'Kerala': 'Mountain',
+        'Himachal Pradesh': 'Hilly',
+        'Jammu and Kashmir': 'Mountain',
+        'Assam': 'Hilly',
+        'Meghalaya': 'Hilly',
+        'Goa': 'Coastal'
+    }
+    df['terrain'] = df['region'].map(terrain_map).fillna('Plain')
+
     return df
+
 
 def train_crop_model_enhanced():
     print("=" * 60)
@@ -126,15 +149,17 @@ def train_crop_model_enhanced():
     df_enhanced = add_geographic_features(df_clean)
     
     # Features (now including climate_zone and season_indicator)
-    X = df_enhanced[['N', 'P', 'K', 'pH', 'temperature', 'humidity', 
-                     'rainfall', 'region', 'climate_zone', 'season_indicator']]
+    X = df_enhanced[['N', 'P', 'K', 'pH', 'temperature', 'humidity',
+                 'rainfall', 'region', 'climate_zone', 'season_indicator', 'altitude', 'terrain']]
+
     y = df_enhanced['label']
     
     # Enhanced preprocessing
     preprocessor = ColumnTransformer(
         transformers=[
-            ('cat', OneHotEncoder(handle_unknown='ignore'), 
-             ['region', 'climate_zone', 'season_indicator'])
+            ('cat', OneHotEncoder(handle_unknown='ignore'),
+            ['region', 'climate_zone', 'season_indicator','terrain'])
+
         ],
         remainder='passthrough'
     )
@@ -193,9 +218,10 @@ def train_crop_model_enhanced():
     feature_names = (
         list(pipeline.named_steps['preprocessor']
              .named_transformers_['cat']
-             .get_feature_names_out(['region', 'climate_zone', 'season_indicator'])) +
-        ['N', 'P', 'K', 'pH', 'temperature', 'humidity', 'rainfall']
-    )
+             .get_feature_names_out(['region', 'climate_zone', 'season_indicator', 'terrain'])) +
+        ['N', 'P', 'K', 'pH', 'temperature', 'humidity', 'rainfall', 'altitude']
+   )
+
     
     importances = pipeline.named_steps['classifier'].feature_importances_
     top_features = sorted(zip(feature_names, importances), 
@@ -229,31 +255,35 @@ def test_geographic_constraints(model):
     print("=" * 60)
     
     test_cases = [
-        {
-            'name': 'Apple in Kashmir (SHOULD work)',
-            'data': {'N': 50, 'P': 40, 'K': 30, 'pH': 6.5, 
-                    'temperature': 15, 'humidity': 60, 'rainfall': 100, 
-                    'region': 'Jammu and Kashmir',
-                    'climate_zone': 'Cold/Temperate', 'season_indicator': 'Spring/Autumn'},
-            'expected_possible': ['Apple', 'Wheat', 'Maize']
-        },
-        {
-            'name': 'Rice in Karnataka (SHOULD work)',
-            'data': {'N': 50, 'P': 40, 'K': 30, 'pH': 6.5, 
-                    'temperature': 28, 'humidity': 75, 'rainfall': 150, 
-                    'region': 'Karnataka',
-                    'climate_zone': 'Subtropical', 'season_indicator': 'Summer'},
-            'expected_possible': ['Rice', 'Cotton', 'Maize']
-        },
-        {
-            'name': 'Apple in Karnataka (should NOT be top choice)',
-            'data': {'N': 50, 'P': 40, 'K': 30, 'pH': 6.5, 
-                    'temperature': 28, 'humidity': 65, 'rainfall': 80, 
-                    'region': 'Karnataka',
-                    'climate_zone': 'Subtropical', 'season_indicator': 'Summer'},
-            'expected_impossible': ['Apple']
-        }
-    ]
+    {
+        'name': 'Apple in Kashmir (SHOULD work)',
+        'data': {'N': 50, 'P': 40, 'K': 30, 'pH': 6.5,
+                 'temperature': 15, 'humidity': 60, 'rainfall': 100,
+                 'region': 'Jammu and Kashmir',
+                 'climate_zone': 'Cold/Temperate', 'season_indicator': 'Spring/Autumn',
+                 'altitude': 1600, 'terrain': 'Mountain'},
+        'expected_possible': ['Apple', 'Wheat', 'Maize']
+    },
+    {
+        'name': 'Rice in Karnataka (SHOULD work)',
+        'data': {'N': 50, 'P': 40, 'K': 30, 'pH': 6.5,
+                 'temperature': 28, 'humidity': 75, 'rainfall': 150,
+                 'region': 'Karnataka',
+                 'climate_zone': 'Subtropical', 'season_indicator': 'Summer',
+                 'altitude': 700, 'terrain': 'Plain'},
+        'expected_possible': ['Rice', 'Cotton', 'Maize']
+    },
+    {
+        'name': 'Apple in Karnataka (should NOT be top choice)',
+        'data': {'N': 50, 'P': 40, 'K': 30, 'pH': 6.5,
+                 'temperature': 28, 'humidity': 65, 'rainfall': 80,
+                 'region': 'Karnataka',
+                 'climate_zone': 'Subtropical', 'season_indicator': 'Summer',
+                 'altitude': 700, 'terrain': 'Plain'},
+        'expected_impossible': ['Apple']
+    }
+]
+
     
     for test in test_cases:
         print(f"\n{test['name']}")

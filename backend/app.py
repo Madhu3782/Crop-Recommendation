@@ -241,8 +241,8 @@ def fetch_weather():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
     
-    # These below this helps for the crop recommendation system for the ML Model like getClimate and get season also
-    # the are the helper function
+# These below this helps for the crop recommendation system for the ML Model like getClimate and get season also
+# the are the helper function
     
 def get_climate_zone(region):
     climate_zones = {
@@ -267,6 +267,24 @@ def get_season(temp):
     else:
         return 'Extreme_Summer'
     
+def get_altitude(region):
+    default = 600
+    return {
+        'Karnataka': 700,
+        'Kerala': 1000,
+        'Jammu and Kashmir': 1600,
+        'Himachal Pradesh': 1800
+    }.get(region, default)
+
+def get_terrain(region):
+    return {
+        'Karnataka': 'Plain',
+        'Kerala': 'Mountain',
+        'Himachal Pradesh': 'Hilly',
+        'Jammu and Kashmir': 'Mountain'
+    }.get(region, 'Plain')
+
+
     
     
 
@@ -287,33 +305,45 @@ def predict_crop():
 
         region = data.get('region')
         try:
-            inputs = {
-                'N': float(data.get('N')),
-                'P': float(data.get('P')),
-                'K': float(data.get('K')),
-                'pH': float(data.get('pH')),
-                'temperature': float(data.get('temperature')),
-                'humidity': float(data.get('humidity')),
-                'rainfall': float(data.get('rainfall'))
-            }
+           inputs = {
+    'N': float(data.get('N')),
+    'P': float(data.get('P')),
+    'K': float(data.get('K')),
+    'pH': float(data.get('pH')),
+    'temperature': float(data.get('temperature')),
+    'humidity': float(data.get('humidity')),
+    'rainfall': float(data.get('rainfall')),
+    'altitude': float(data.get('altitude')),
+    'terrain': data.get('terrain')
+}
+
         except (ValueError, TypeError):
             return jsonify({'result': "Error: Please enter valid numerical values for all fields."})
 
         # Build input row for ML model
         climate_zone = get_climate_zone(region)
+        altitude = get_altitude(region)
+        terrain = get_terrain(region)
         season_indicator = get_season(inputs['temperature'])
+
+
         input_df = pd.DataFrame([{
-            'N': inputs['N'],
-            'P': inputs['P'],
-            'K': inputs['K'],
-            'pH': inputs['pH'],
-            'temperature': inputs['temperature'],
-            'humidity': inputs['humidity'],
-            'rainfall': inputs['rainfall'],
-            'region': region,
-            'climate_zone': climate_zone,
-            'season_indicator': season_indicator
-        }])
+    'N': inputs['N'],
+    'P': inputs['P'],
+    'K': inputs['K'],
+    'pH': inputs['pH'],
+    'temperature': inputs['temperature'],
+    'humidity': inputs['humidity'],
+    'rainfall': inputs['rainfall'],
+
+    'region': region,
+    'climate_zone': climate_zone,
+    'season_indicator': season_indicator,
+
+    'altitude': inputs['altitude'],
+    'terrain': inputs['terrain']
+}])
+
 
         # Get probabilities for all crops from ML model
         probs = model_crop.predict_proba(input_df)[0]   # e.g. [0.1, 0.5, ...]
@@ -341,6 +371,21 @@ def predict_crop():
             final_score = (agro_score * 0.6) + (ml_conf * 0.4)
 
             suitable = final_score >= 50  # threshold; tune if needed
+            # ---- Improved Suitability Check for Realistic Output ----
+            suitable = True
+
+# Rule 1: ML confidence too low = reject
+            if ml_conf < 25:
+                suitable = False
+
+# Rule 2: Agro match too low = reject
+            if agro_score < 30:
+                suitable = False
+
+# Rule 3: Final score too low = reject
+            if final_score < 50:
+                suitable = False
+
 
             if suitable:
                 response_text = (
