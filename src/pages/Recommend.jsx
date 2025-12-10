@@ -1,255 +1,344 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
 import './Dashboard.css';
+import Select from "react-select";
 
 const Recommend = () => {
 
-    const [formData, setFormData] = useState({
-        state: 'Karnataka',
-        district: 'Davanagere',
-        N: 90,
-        P: 42,
-        K: 43,
-        pH: 6.5,
-        temperature: '',
-        humidity: '',
-        rainfall: '',
-        crop: ''
+  const [formData, setFormData] = useState({
+    state: '',
+    district: '',
+    N: 90,
+    P: 42,
+    K: 43,
+    pH: 6.5,
+    temperature: '',
+    humidity: '',
+    rainfall: '',
+    crop: ''
+  });
+
+  const [statesList, setStatesList] = useState([]);
+  const [districtsList, setDistrictsList] = useState([]);
+
+  const [result, setResult] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [weatherLoading, setWeatherLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  // 🔹 FETCH STATES (INDIA ONLY)
+useEffect(() => {
+  fetch("https://countriesnow.space/api/v0.1/countries/states")
+    .then(res => res.json())
+    .then(data => {
+      const india = data.data.find(c => c.name === "India");
+
+      const formatted = india.states.map(s => ({
+        label: s.name,
+        value: s.name
+      }));
+
+      setStatesList(formatted);
     });
-
-    const [result, setResult] = useState(null);
-    const [loading, setLoading] = useState(false);
-    const [weatherLoading, setWeatherLoading] = useState(false);
-    const [error, setError] = useState('');
-
-    const states = ['Karnataka', 'Punjab', 'Maharashtra', 'Madhya Pradesh', 'Uttar Pradesh'];
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    // Fetch Live Weather
-    const fetchWeather = async () => {
-        if (!formData.district) {
-            alert("Please enter a district");
-            return;
-        }
-
-        setWeatherLoading(true);
-        try {
-            const res = await axios.get(`http://localhost:5000/fetch_weather?state=${formData.state}&district=${formData.district}`);
-            const data = res.data;
-
-            setFormData(prev => ({
-                ...prev,
-                temperature: data.temperature,
-                humidity: data.humidity,
-                rainfall: data.rainfall
-            }));
-
-            alert(`Weather fetched!\nTemp: ${data.temperature}°C`);
-        } catch (err) {
-            alert("Failed to fetch weather");
-        } finally {
-            setWeatherLoading(false);
-        }
-    };
-
-    // Backend ML Predict
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
-        setResult('');
-        setError('');
-
-        if (!formData.temperature || !formData.rainfall || !formData.humidity) {
-            setError("Please enter or fetch weather values");
-            setLoading(false);
-            return;
-        }
-
-        try {
-            const payload = {
-                region: formData.district,
-                N: formData.N,
-                P: formData.P,
-                K: formData.K,
-                pH: formData.pH,
-                temperature: formData.temperature,
-                humidity: formData.humidity,
-                rainfall: formData.rainfall,
-                ...(formData.crop && { crop: formData.crop })
-            };
-
-            const res = await axios.post('http://localhost:5000/predict', payload);
-            setResult(res.data.result || "No response from backend");
-
-        } catch (err) {
-            setError("Prediction failed, check backend");
-        } finally {
-            setLoading(false);
-        }
-    };
-
-    return (
-        <div className="dashboard-container">
-            <Navbar />
-
-            <div className="content-wrapper" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-
-                <div className="form-section">
-                    <h2 style={{ color: '#2c3e50' }}>🌾 Dynamic Crop Recommendation</h2>
-                    <p className="subtitle">Get best crop advice based on live weather + soil.</p>
-
-                    <form onSubmit={handleSubmit}>
-
-                        {/* LOCATION */}
-                        <div className="section-header">📍 Location & Weather</div>
-                        <div className="form-grid">
-                            <div className="select-dropdown">
-                                                        <label>State</label>
-                                                        <select
-                                                            name="state"
-                                                            value={formData.state}
-                                                            onChange={handleChange}
-                                                        >
-                                                            {[
-                                                            "Andhra Pradesh",
-                                                            "Arunachal Pradesh",
-                                                            "Assam",
-                                                            "Bihar",
-                                                            "Chhattisgarh",
-                                                            "Goa",
-                                                            "Gujarat",
-                                                            "Haryana",
-                                                            "Himachal Pradesh",
-                                                            "Jharkhand",
-                                                            "Karnataka",
-                                                            "Kerala",
-                                                            "Madhya Pradesh",
-                                                            "Maharashtra",
-                                                            "Manipur",
-                                                            "Meghalaya",
-                                                            "Mizoram",
-                                                            "Nagaland",
-                                                            "Odisha",
-                                                            "Punjab",
-                                                            "Rajasthan",
-                                                            "Sikkim",
-                                                            "Tamil Nadu",
-                                                            "Telangana",
-                                                            "Tripura",
-                                                            "Uttar Pradesh",
-                                                            "Uttarakhand",
-                                                            "West Bengal",
-                                                            "Andaman and Nicobar Islands",
-                                                            "Chandigarh",
-                                                            "Dadra and Nagar Haveli",
-                                                            "Daman and Diu",
-                                                            "Delhi",
-                                                            "Jammu and Kashmir",
-                                                            "Ladakh",
-                                                            "Lakshadweep",
-                                                            "Puducherry"
-                                                            ].map((s, index) => (
-                                                            <option key={index} value={s}>
-                                                                {s}
-                                                            </option>
-                                                            ))}
-                                                        </select>
-                                                        </div>
+}, []);
 
 
-                            <div className="form-group">
-                                <label>District / City</label>
-                                <input type="text" name="district" value={formData.district} onChange={handleChange} />
-                            </div>
 
-                            <div className="form-group">
-                                <button type="button"
-                                    onClick={fetchWeather}
-                                    className="secondary-btn"
-                                    disabled={weatherLoading}>
-                                    {weatherLoading ? 'Fetching...' : '☁️ Fetch Live Weather'}
-                                </button>
-                            </div>
-                        </div>
+  // 🔹 FETCH DISTRICTS WHEN STATE SELECTED
+  const handleStateChange = (selectedState) => {
+  setFormData({ ...formData, state: selectedState.label, district: "" });
 
-                        {/* Weather Inputs */}
-                        <div className="form-grid">
-                            <div className="form-group">
-                                <label>Temperature (°C)</label>
-                                <input type="number" name="temperature"
-                                    value={formData.temperature} onChange={handleChange} step="0.1" />
-                            </div>
-                            <div className="form-group">
-                                <label>Humidity (%)</label>
-                                <input type="number" name="humidity"
-                                    value={formData.humidity} onChange={handleChange} step="0.1" />
-                            </div>
-                            <div className="form-group">
-                                <label>Rainfall (mm)</label>
-                                <input type="number" name="rainfall"
-                                    value={formData.rainfall} onChange={handleChange} step="0.1" />
-                            </div>
-                            <div className="form-group"><label>Crop (optional)</label>
-                                <input type="text" name="crop" value={formData.crop} onChange={handleChange} placeholder="e.g. Rice" />
-                            </div>
-                        </div>
+  fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
+    method: "POST",
+    headers: { "Content-Type": "application/json"},
+    body: JSON.stringify({
+      country: "India",
+      state: selectedState.label
+    })
+  })
+    .then(res => res.json())
+    .then(data => {
+      const formatted = data.data.map(d => ({
+        label: d,
+        value: d
+      }));
 
-                        {/* SOIL NUTRIENTS */}
-                        <div className="section-header" style={{ marginTop: '20px' }}>🧪 Soil Details</div>
-                        <div className="form-grid">
-                            <div className="form-group"><label>Nitrogen (N)</label>
-                                <input type="number" name="N" value={formData.N} onChange={handleChange} />
-                            </div>
-                            <div className="form-group"><label>Phosphorus (P)</label>
-                                <input type="number" name="P" value={formData.P} onChange={handleChange} />
-                            </div>
-                            <div className="form-group"><label>Potassium (K)</label>
-                                <input type="number" name="K" value={formData.K} onChange={handleChange} />
-                            </div>
-                            <div className="form-group"><label>pH Level</label>
-                                <input type="number" name="pH" value={formData.pH} onChange={handleChange} />
-                            </div>
-                            {/* <div className="form-group"><label>Crop (optional)</label>
-                                <input type="text" name="crop" value={formData.crop} onChange={handleChange} placeholder="e.g. Rice" />
-                            </div> */}
-                        </div>
-
-                        <div className="form-actions" style={{ marginTop: '25px' }}>
-                            <button className="primary-btn" disabled={loading}>
-                                {loading ? 'Analyzing...' : '🔍 Predict Best Crop'}
-                            </button>
-                        </div>
-                    </form>
-
-                    {error && <div className="error-msg">{error}</div>}
-                </div>
+      setDistrictsList(formatted);
+    });
+};
 
 
-                {/* RESULT DISPLAY */}
-                {result && (
-                    <div className="results-section"
-                        style={{ marginTop: '30px', padding: '20px',
-                            borderRadius: '8px', background: '#e8f5e9',
-                            border: '1px solid #c8e6c9' }}>
 
-                        <h3 style={{ color: '#2e7d32' }}>📋 Crop Suitability Result</h3>
+  // 🔹 DISTRICT CHANGE
+const handleDistrictChange = (selectedDistrict) => {
+  setFormData({ ...formData, district: selectedDistrict.value });
+};
 
-                        <pre style={{ whiteSpace: 'pre-line',
-                            marginTop: '15px',
-                            fontSize: '1.15em',
-                            color: '#333' }}>
-{result}
-                        </pre>
-                    </div>
-                )}
 
+
+  // 🔹 FETCH WEATHER
+  const fetchWeather = async () => {
+    if (!formData.district) {
+      alert("Please select a district");
+      return;
+    }
+
+    setWeatherLoading(true);
+
+    try {
+      const res = await axios.get(`http://localhost:5000/fetch_weather?district=${formData.district}`);
+      const data = res.data;
+
+      setFormData(prev => ({
+        ...prev,
+        temperature: data.temperature,
+        humidity: data.humidity,
+        rainfall: data.rainfall
+      }));
+
+      alert("Weather fetched successfully!");
+
+    } catch (err) {
+      alert("Failed to fetch weather");
+    } finally {
+      setWeatherLoading(false);
+    }
+  };
+
+
+  // 🔹 ML PREDICTION
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setResult('');
+    setError('');
+
+    try {
+      const payload = {
+        region: formData.district,
+        N: formData.N,
+        P: formData.P,
+        K: formData.K,
+        pH: formData.pH,
+        temperature: formData.temperature,
+        humidity: formData.humidity,
+        rainfall: formData.rainfall,
+        ...(formData.crop && { crop: formData.crop })
+      };
+
+      const res = await axios.post("http://localhost:5000/predict", payload);
+      setResult(res.data.result);
+
+    } catch {
+      setError("Prediction failed. Check backend.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
+  return (
+    <div className="dashboard-container">
+      <Navbar />
+
+      <div className="content-wrapper" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+        <div className="form-section">
+          <h2 style={{ color: '#2c3e50' }}>🌾 Dynamic Crop Recommendation</h2>
+          <p className="subtitle">Get best crop advice based on live weather + soil.</p>
+
+          <form onSubmit={handleSubmit}>
+
+            {/* LOCATION */}
+            <div className="section-header">📍 Location & Weather</div>
+            <div className="form-grid">
+
+              {/* STATE */}
+              <div className="form-group">
+                <label>State</label>
+                <Select
+                  options={statesList}
+                  value={statesList.find(s => s.label === formData.state)}
+                  onChange={handleStateChange}
+                  placeholder="Search or Select State"
+                  isSearchable
+                />
+              </div>
+
+              {/* DISTRICT */}
+              <div className="form-group">
+                <label>District</label>
+                <Select
+                  options={districtsList}
+                  value={districtsList.find(d => d.label === formData.district)}
+                  onChange={handleDistrictChange}
+                  placeholder={formData.state ? "Search or Select District" : "Select State first"}
+                  isSearchable
+                  isDisabled={!formData.state}
+                />
+              </div>
+
+              {/* Weather Button */}
+              <div className="form-group">
+                <button type="button"
+                  onClick={fetchWeather}
+                  className="secondary-btn"
+                  disabled={weatherLoading}>
+                  {weatherLoading ? 'Fetching...' : '☁️ Fetch Live Weather'}
+                </button>
+              </div>
             </div>
+
+            {/* Weather Inputs */}
+            <div className="form-grid">
+              <div className="form-group">
+                <label>Temperature (°C)</label>
+                <input type="number" value={formData.temperature}
+                  onChange={(e) => setFormData({ ...formData, temperature: e.target.value })} />
+              </div>
+              <div className="form-group">
+                <label>Humidity (%)</label>
+                <input type="number" value={formData.humidity}
+                  onChange={(e) => setFormData({ ...formData, humidity: e.target.value })} />
+              </div>
+              <div className="form-group">
+                <label>Rainfall (mm)</label>
+                <input type="number" value={formData.rainfall}
+                  onChange={(e) => setFormData({ ...formData, rainfall: e.target.value })} />
+              </div>
+              <div className="form-group">
+                <label>Crop (Optional)</label>
+                <input type="text" value={formData.crop}
+                  onChange={(e) => setFormData({ ...formData, crop: e.target.value })} />
+              </div>
+            </div>
+
+            {/* SOIL DETAILS */}
+            <div className="section-header">🧪 Soil Details</div>
+            <div className="form-grid">
+              <div className="form-group"><label>Nitrogen (N)</label>
+                <input type="number" value={formData.N}
+                  onChange={(e) => setFormData({ ...formData, N: e.target.value })} />
+              </div>
+              <div className="form-group"><label>Phosphorus (P)</label>
+                <input type="number" value={formData.P}
+                  onChange={(e) => setFormData({ ...formData, P: e.target.value })} />
+              </div>
+              <div className="form-group"><label>Potassium (K)</label>
+                <input type="number" value={formData.K}
+                  onChange={(e) => setFormData({ ...formData, K: e.target.value })} />
+              </div>
+              <div className="form-group"><label>pH Level</label>
+                <input type="number" value={formData.pH}
+                  onChange={(e) => setFormData({ ...formData, pH: e.target.value })} />
+              </div>
+            </div>
+
+            <div className="form-actions">
+              <button className="primary-btn" disabled={loading}>
+                {loading ? 'Analyzing...' : '🔍 Predict Best Crop'}
+              </button>
+            </div>
+          </form>
+
+          {error && <div className="error-msg">{error}</div>}
         </div>
-    );
+
+
+        {/* RESULT */}
+        {result && (
+  <div className="result-container">
+
+    <h3 className="result-title">📊 Crop Suitability Result</h3>
+
+    {/* STATUS */}
+    <p className="result-line">
+      {result.includes("NOT") ? (
+        <span className="status-bad">❌ Not suitable here</span>
+      ) : (
+        <span className="status-good">✔️ Suitable crop</span>
+      )}
+    </p>
+
+    {/* Extract values from result */}
+    {(() => {
+      const lines = result.split("\n");
+      let mlConf = 0;
+      let agro = 0;
+
+      lines.forEach(line => {
+        if (line.includes("ML confidence")) {
+          mlConf = Number(line.replace(/[^0-9.]/g, ""));
+        }
+        if (line.includes("Agro suitability")) {
+          agro = Number(line.replace(/[^0-9.]/g, ""));
+        }
+      });
+
+      return (
+        <>
+          {/* ML SCORE BAR */}
+          <div className="score-wrapper">
+            <div className="score-label">🧠 ML Confidence ({mlConf}%)</div>
+            <div className="score-bar">
+              <div className="score-fill" 
+                style={{
+                  width: `${mlConf}%`,
+                  background: mlConf > 60 ? "#3cb371" : mlConf > 35 ? "#e5c100" : "#de4b4b"
+                }}>
+              </div>
+            </div>
+          </div>
+
+          {/* AGRO SCORE BAR */}
+          <div className="score-wrapper">
+            <div className="score-label">🌾 Agro Suitability ({agro}%)</div>
+            <div className="score-bar">
+              <div className="score-fill"
+                style={{
+                  width: `${agro}%`,
+                  background: agro > 60 ? "#3cb371" : agro > 35 ? "#e5c100" : "#de4b4b"
+                }}>
+              </div>
+            </div>
+          </div>
+        </>
+      );
+    })()}
+
+    {/* OTHER RAW TEXT LINES */}
+    {result.split("\n").map((line, idx) =>
+      (line.includes("confidence") || line.includes("suitability")) ? null : (
+        <p key={idx} className="result-line">{line}</p>
+    ))}
+
+    {/* ALTERNATIVES */}
+   {/* ALTERNATIVES */}
+{result.includes("Suggested Alternatives:") && (
+  <div className="alt-container">
+    <h4 className="alt-title">🌱 Suggested Alternatives</h4>
+
+    {result
+      .split("Suggested Alternatives:")[1]
+      .replace(".", "")
+      .split(",")
+      .map((alt, i) => (
+        <div key={i} className="alt-item">
+          ✔️ {alt.trim()}
+        </div>
+      ))
+    }
+  </div>
+)}
+
+
+  </div>
+)}
+
+      </div>
+    </div>
+  );
 };
 
 export default Recommend;

@@ -1,70 +1,155 @@
-/* Append this to Dashboard.css or keep usage of Dashboard.css sufficient */
-
-.subtitle {
-    font-size: 0.9em;
-    color: #666;
+/* =============== GENERAL LAYOUT =============== */
+.section-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.08);
     margin-bottom: 20px;
+    border: 1px solid #eef1f4;
 }
 
-.recommendation-list {
-    display: flex;
-    flex-direction: column;
+.section-title {
+    font-size: 1.12em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3d50;
+}
+
+.subtitle {
+    color: #607080;
+    font-size: 0.9em;
+}
+
+/* =============== FORM UI =============== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 15px;
 }
 
-.rec-card {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transition: transform 0.2s;
-}
-
-.rec-card:hover {
-    transform: translateY(-2px);
-}
-
-.top-rec {
-    border: 2px solid #4CAF50;
-    background-color: #f0f9f0;
-}
-
-.rank {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #aaa;
-    width: 40px;
-}
-
-.top-rec .rank {
-    color: #4CAF50;
-}
-
-.crop-info h4 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.rec-price {
+.form-group label {
+    font-weight: 600;
     font-size: 0.9em;
-    color: #555;
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.badge {
-    background: #4CAF50;
+.form-group input {
+    border: 1px solid #cfd6e0;
+    padding: 9px;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+/* =============== BUTTONS =============== */
+.primary-btn {
+    width: 100%;
+    background: #29b36d;
     color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    margin-left: auto;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
 }
 
-.select-dropdown {
-  max-height: 180px;
-  overflow-y: auto;
+.fetch-btn {
+    background: #5a9dfc;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* =============== RESULT PANEL =============== */
+.result-container {
+    margin-top: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+    border: 1px solid #eef1f4;
+}
+
+.result-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #1f3c55;
+}
+
+.result-line {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* =============== STATUS BOX =============== */
+.status-box {
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    display: inline-block;
+}
+
+.status-box.good {
+    background: #e5f8e8;
+    color: #248a4a;
+    border-left: 5px solid #1e8f48;
+}
+
+.status-box.bad {
+    background: #fdeaea;
+    color: #c04141;
+    border-left: 5px solid #ca3f3f;
+}
+
+/* =============== GAUGE BARS =============== */
+.score-wrapper {
+    margin-top: 8px;
+}
+
+.score-label {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.score-bar {
+    background: #e5e9ec;
+    height: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.score-fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.8s ease-out;
+}
+
+/* =============== ALTERNATIVES LIST =============== */
+.alt-container {
+    margin-top: 15px;
+}
+
+.alt-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #245a36;
+}
+
+.alt-item {
+    background: #eaf7ec;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 4px solid #2fb56f;
+    margin-bottom: 6px;
+    font-size: 0.92em;
+    color: #214b33;
+    width: fit-content;
 }

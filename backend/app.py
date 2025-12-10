@@ -11,6 +11,10 @@ import requests
 import threading
 import time
 
+
+
+
+
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
@@ -607,6 +611,23 @@ def market_status_route():
             'change': change
         })
     return jsonify(status)
+
+# State and district route
+@app.route('/states', methods=['GET'])
+def get_states():
+    try:
+        res = requests.get("https://cdn-api.co-vin.in/api/v2/admin/location/states")
+        return jsonify(res.json())
+    except Exception as e:
+        return jsonify({"error": str(e)})
+@app.route('/districts/<state_id>', methods=['GET'])
+def get_districts(state_id):
+    try:
+        res = requests.get(f"https://cdn-api.co-vin.in/api/v2/admin/location/districts/{state_id}")
+        return jsonify(res.json())
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
 
 # Shut down scheduler when app exits
 # atexit.register(lambda: scheduler.shutdown()) # Removed
