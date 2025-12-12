@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+
 import './Alerts.css';
 
 const Alerts = () => {
@@ -82,7 +82,7 @@ const Alerts = () => {
 
     return (
         <div className="alerts-container">
-            <Navbar />
+
             <header className="alerts-header">
                 <h1>📡 Market Monitor & Alerts</h1>
                 <p>Track live prices and set automated notifications.</p>

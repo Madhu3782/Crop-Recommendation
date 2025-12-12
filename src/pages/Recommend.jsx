@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navbar from '../components/Navbar';
+
 import './Dashboard.css';
 import Select from "react-select";
 
@@ -19,26 +19,26 @@ const Recommend = () => {
     crop: ''
   });
   const altitudeMap = {
-  "Karnataka": 700,
-  "Kerala": 1000,
-  "Tamil Nadu": 600,
-  "Himachal Pradesh": 1800,
-  "Jammu and Kashmir": 1600,
-  "Maharashtra": 650,
-  "Assam": 150,
-  "Meghalaya": 1300,
-  "Goa": 30
-};
+    "Karnataka": 700,
+    "Kerala": 1000,
+    "Tamil Nadu": 600,
+    "Himachal Pradesh": 1800,
+    "Jammu and Kashmir": 1600,
+    "Maharashtra": 650,
+    "Assam": 150,
+    "Meghalaya": 1300,
+    "Goa": 30
+  };
 
-const terrainMap = {
-  "Karnataka": "Plain",
-  "Kerala": "Mountain",
-  "Himachal Pradesh": "Hilly",
-  "Jammu and Kashmir": "Mountain",
-  "Assam": "Hilly",
-  "Meghalaya": "Hilly",
-  "Goa": "Coastal"
-};
+  const terrainMap = {
+    "Karnataka": "Plain",
+    "Kerala": "Mountain",
+    "Himachal Pradesh": "Hilly",
+    "Jammu and Kashmir": "Mountain",
+    "Assam": "Hilly",
+    "Meghalaya": "Hilly",
+    "Goa": "Coastal"
+  };
 
   const [statesList, setStatesList] = useState([]);
   const [districtsList, setDistrictsList] = useState([]);
@@ -49,52 +49,52 @@ const terrainMap = {
   const [error, setError] = useState('');
 
   // 🔹 FETCH STATES (INDIA ONLY)
-useEffect(() => {
-  fetch("https://countriesnow.space/api/v0.1/countries/states")
-    .then(res => res.json())
-    .then(data => {
-      const india = data.data.find(c => c.name === "India");
+  useEffect(() => {
+    fetch("https://countriesnow.space/api/v0.1/countries/states")
+      .then(res => res.json())
+      .then(data => {
+        const india = data.data.find(c => c.name === "India");
 
-      const formatted = india.states.map(s => ({
-        label: s.name,
-        value: s.name
-      }));
+        const formatted = india.states.map(s => ({
+          label: s.name,
+          value: s.name
+        }));
 
-      setStatesList(formatted);
-    });
-}, []);
+        setStatesList(formatted);
+      });
+  }, []);
 
 
 
   // 🔹 FETCH DISTRICTS WHEN STATE SELECTED
   const handleStateChange = (selectedState) => {
-  setFormData({ ...formData, state: selectedState.label, district: "" });
+    setFormData({ ...formData, state: selectedState.label, district: "" });
 
-  fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
-    method: "POST",
-    headers: { "Content-Type": "application/json"},
-    body: JSON.stringify({
-      country: "India",
-      state: selectedState.label
+    fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        country: "India",
+        state: selectedState.label
+      })
     })
-  })
-    .then(res => res.json())
-    .then(data => {
-      const formatted = data.data.map(d => ({
-        label: d,
-        value: d
-      }));
+      .then(res => res.json())
+      .then(data => {
+        const formatted = data.data.map(d => ({
+          label: d,
+          value: d
+        }));
 
-      setDistrictsList(formatted);
-    });
-};
+        setDistrictsList(formatted);
+      });
+  };
 
 
 
   // 🔹 DISTRICT CHANGE
-const handleDistrictChange = (selectedDistrict) => {
-  setFormData({ ...formData, district: selectedDistrict.value });
-};
+  const handleDistrictChange = (selectedDistrict) => {
+    setFormData({ ...formData, district: selectedDistrict.value });
+  };
 
 
 
@@ -137,20 +137,20 @@ const handleDistrictChange = (selectedDistrict) => {
 
     try {
       const payload = {
-  region: formData.state,       // Use STATE, not district
-  N: Number(formData.N),
-  P: Number(formData.P),
-  K: Number(formData.K),
-  pH: Number(formData.pH),
-  temperature: Number(formData.temperature),
-  humidity: Number(formData.humidity),
-  rainfall: Number(formData.rainfall),
+        region: formData.state,       // Use STATE, not district
+        N: Number(formData.N),
+        P: Number(formData.P),
+        K: Number(formData.K),
+        pH: Number(formData.pH),
+        temperature: Number(formData.temperature),
+        humidity: Number(formData.humidity),
+        rainfall: Number(formData.rainfall),
 
-  altitude: altitudeMap[formData.state] ?? 600,
-  terrain: terrainMap[formData.state] ?? "Plain",
-  
-  ...(formData.crop && { crop: formData.crop })
-};
+        altitude: altitudeMap[formData.state] ?? 600,
+        terrain: terrainMap[formData.state] ?? "Plain",
+
+        ...(formData.crop && { crop: formData.crop })
+      };
 
 
       const res = await axios.post("http://localhost:5000/predict", payload);
@@ -166,7 +166,7 @@ const handleDistrictChange = (selectedDistrict) => {
 
   return (
     <div className="dashboard-container">
-      <Navbar />
+
 
       <div className="content-wrapper" style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
@@ -274,93 +274,93 @@ const handleDistrictChange = (selectedDistrict) => {
 
         {/* RESULT */}
         {result && (
-  <div className="result-container">
+          <div className="result-container">
 
-    <h3 className="result-title">📊 Crop Suitability Result</h3>
+            <h3 className="result-title">📊 Crop Suitability Result</h3>
 
-    {/* STATUS */}
-    <p className="result-line">
-      {result.includes("NOT") ? (
-        <span className="status-bad">❌ Not suitable here</span>
-      ) : (
-        <span className="status-good">✔️ Suitable crop</span>
-      )}
-    </p>
+            {/* STATUS */}
+            <p className="result-line">
+              {result.includes("NOT") ? (
+                <span className="status-bad">❌ Not suitable here</span>
+              ) : (
+                <span className="status-good">✔️ Suitable crop</span>
+              )}
+            </p>
 
-    {/* Extract values from result */}
-    {(() => {
-      const lines = result.split("\n");
-      let mlConf = 0;
-      let agro = 0;
+            {/* Extract values from result */}
+            {(() => {
+              const lines = result.split("\n");
+              let mlConf = 0;
+              let agro = 0;
 
-      lines.forEach(line => {
-        if (line.includes("ML confidence")) {
-          mlConf = Number(line.replace(/[^0-9.]/g, ""));
-        }
-        if (line.includes("Agro suitability")) {
-          agro = Number(line.replace(/[^0-9.]/g, ""));
-        }
-      });
+              lines.forEach(line => {
+                if (line.includes("ML confidence")) {
+                  mlConf = Number(line.replace(/[^0-9.]/g, ""));
+                }
+                if (line.includes("Agro suitability")) {
+                  agro = Number(line.replace(/[^0-9.]/g, ""));
+                }
+              });
 
-      return (
-        <>
-          {/* ML SCORE BAR */}
-          <div className="score-wrapper">
-            <div className="score-label">🧠 ML Confidence ({mlConf}%)</div>
-            <div className="score-bar">
-              <div className="score-fill" 
-                style={{
-                  width: `${mlConf}%`,
-                  background: mlConf > 60 ? "#3cb371" : mlConf > 35 ? "#e5c100" : "#de4b4b"
-                }}>
+              return (
+                <>
+                  {/* ML SCORE BAR */}
+                  <div className="score-wrapper">
+                    <div className="score-label">🧠 ML Confidence ({mlConf}%)</div>
+                    <div className="score-bar">
+                      <div className="score-fill"
+                        style={{
+                          width: `${mlConf}%`,
+                          background: mlConf > 60 ? "#3cb371" : mlConf > 35 ? "#e5c100" : "#de4b4b"
+                        }}>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* AGRO SCORE BAR */}
+                  <div className="score-wrapper">
+                    <div className="score-label">🌾 Agro Suitability ({agro}%)</div>
+                    <div className="score-bar">
+                      <div className="score-fill"
+                        style={{
+                          width: `${agro}%`,
+                          background: agro > 60 ? "#3cb371" : agro > 35 ? "#e5c100" : "#de4b4b"
+                        }}>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+            })()}
+
+            {/* OTHER RAW TEXT LINES */}
+            {result.split("\n").map((line, idx) =>
+              (line.includes("confidence") || line.includes("suitability")) ? null : (
+                <p key={idx} className="result-line">{line}</p>
+              ))}
+
+            {/* ALTERNATIVES */}
+
+            {result.includes("Suggested Alternatives:") && (
+              <div className="alt-container">
+                <h4 className="alt-title">🌱 Suggested Alternatives</h4>
+
+                {result
+                  .split("Suggested Alternatives:")[1]
+                  .replace(".", "")
+                  .split(",")
+                  .map((alt, i) => (
+                    <div key={i} className="alt-item">
+                      ✔️ {alt.trim()}
+                    </div>
+                  ))
+                }
               </div>
-            </div>
+            )}
+
+
           </div>
-
-          {/* AGRO SCORE BAR */}
-          <div className="score-wrapper">
-            <div className="score-label">🌾 Agro Suitability ({agro}%)</div>
-            <div className="score-bar">
-              <div className="score-fill"
-                style={{
-                  width: `${agro}%`,
-                  background: agro > 60 ? "#3cb371" : agro > 35 ? "#e5c100" : "#de4b4b"
-                }}>
-              </div>
-            </div>
-          </div>
-        </>
-      );
-    })()}
-
-    {/* OTHER RAW TEXT LINES */}
-    {result.split("\n").map((line, idx) =>
-      (line.includes("confidence") || line.includes("suitability")) ? null : (
-        <p key={idx} className="result-line">{line}</p>
-    ))}
-
-    {/* ALTERNATIVES */}
-
-{result.includes("Suggested Alternatives:") && (
-  <div className="alt-container">
-    <h4 className="alt-title">🌱 Suggested Alternatives</h4>
-
-    {result
-      .split("Suggested Alternatives:")[1]
-      .replace(".", "")
-      .split(",")
-      .map((alt, i) => (
-        <div key={i} className="alt-item">
-          ✔️ {alt.trim()}
-        </div>
-      ))
-    }
-  </div>
-)}
-
-
-  </div>
-)}
+        )}
 
       </div>
     </div>

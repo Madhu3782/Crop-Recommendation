@@ -1,0 +1,83 @@
+.pest-alert-container {
+    padding: 30px;
+}
+
+.pest-alert-header {
+    margin-bottom: 30px;
+}
+
+.pest-alert-header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.pest-alert-header p {
+    color: #666;
+}
+
+.pest-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.form-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.result-card {
+    flex: 2;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.risk-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.risk-low {
+    background-color: #2ecc71;
+}
+
+.risk-medium {
+    background-color: #f1c40f;
+}
+
+.risk-high {
+    background-color: #e74c3c;
+}
+
+.pest-name {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.recommendation-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.chart-section {
+    margin-top: 30px;
+    height: 300px;
+}

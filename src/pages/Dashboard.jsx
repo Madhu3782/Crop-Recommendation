@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import Navbar from '../components/Navbar';
+
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -65,7 +65,7 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard-container">
-            <Navbar />
+
             <div className="content-wrapper">
                 <div className="form-section">
                     <h2>🌾 Get Crop Price Prediction</h2>

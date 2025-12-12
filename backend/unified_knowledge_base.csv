@@ -1,0 +1,30 @@
+Intent,Topic,Question,Answer
+general,Disease,How to treat potato early blight?,Use fungicides containing Mancozeb or Chlorothalonil. Remove infected leaves immediately.
+general,Fertilizer,What is the best fertilizer for wheat?,"Wheat requires Nitrogen, Phosphorus, and Potassium (NPK) in a 4:2:1 ratio. Urea is good for top dressing."
+general,Irrigation,How often should I water sugarcane?,"Sugarcane needs frequent irrigation. In summer, irrigate every 7-10 days; in winter, every 15-20 days."
+general,General,What is the best time to sow cotton?,Cotton is best sown in April-May in North India and June-July in Central/South India.
+general,Scheme,What is PM Kisan Samman Nidhi?,"It is a central scheme providing ₹6,000 per year to farmers in three installments of ₹2,000."
+general,Market,When is the best time to sell onions?,Onion prices usually peak in October-November. Store the Rabi harvest and sell during lean months.
+general,Tip,How to improve soil testing?,"Collect soil samples from 5-6 spots in your field, mix them, and send 500g to a soil testing lab."
+general,Pest,Whiteflies on cotton solution?,Spray Neem oil or Acetamiprid. Install yellow sticky traps.
+general,Disease,Control rust in wheat?,Grow resistant varieties. Spray Propiconazole if symptoms appear.
+general,Fertilizer,Symptoms of Potassium deficiency?,Edges of older leaves turn yellow or brown (scorched appearance). Stems may become weak.
+general,General,Best crops for sandy soil?,"Groundnut, Watermelon, Muskmelon, and Potato grow well in sandy loam soil."
+general,Scheme,How to apply for soil health card?,Visit your nearest Agriculture Department office or apply online at the Soil Health Card portal.
+general,Irrigation,Drip irrigation benefits?,"Saves 30-50% water, reduces weed growth, and improves yield by delivering water directly to roots."
+disease_query,Crop Disease,Why are my tomato leaves turning yellow?,"Yellowing leaves in tomatoes can be caused by Nitrogen deficiency, Tomato Yellow Leaf Curl Virus (TYLCV), or overwatering. If older leaves turn yellow first, apply Nitrogen. If top leaves curl and yellow, check for whiteflies."
+disease_query,Crop Disease,How to treat early blight in potato?,Early blight causes concentric ring spots on leaves. Treat by spraying Mancozeb (2.5g/liter) or Chlorothalonil. Remove infected lower leaves.
+disease_query,Crop Disease,My wheat has red spots on stems.,This is likely Stem Rust. Grow resistant varieties like HD 2967. Spray Propiconazole (0.1%) immediately upon symptom appearance.
+pest_query,Pest Control,How to control Fall Armyworm in Maize?,Fall Armyworm attacks the whorl. Apply Emamectin Benzoate (0.4g/liter) or Spinetoram. Install pheromone traps (4/acre) for monitoring.
+pest_query,Pest Control,Whiteflies damaging my cotton crop.,Whiteflies spread viruses. Spray Neem Oil (10000 ppm) or Acetamiprid. Install yellow sticky traps (10/acre) to catch adults.
+pest_query,Pest Control,Termite attack in sugarcane.,Termites damage roots. Apply Chlorpyriphos 20EC (5 liters/hectare) via irrigation water. Avoid water stress in the field.
+fertilizer_advice,Fertilizer,Recommended fertilizer dose for Rice?,"Rice needs N:P:K ratio of 4:2:1. Apply urea in splits: 50% at transplanting, 25% at tillering, 25% at panicle initiation."
+fertilizer_advice,Fertilizer,How to correct zinc deficiency in wheat?,Zinc deficiency causes bleached spots on leaves. Apply Zinc Sulphate (25 kg/hectare) during basal dosing or spray 0.5% ZnSO4 solution.
+irrigation_guidance,Irrigation,Irrigation schedule for Wheat.,"Wheat is critical at Crown Root Initiation (CRI) stage (21 days after sowing). Irrigate at CRI, Tillering, Jointing, Flowering, and Grain Filling stages."
+irrigation_guidance,Irrigation,Water requirement for Sugarcane.,"Sugarcane is a water-intensive crop. Irrigations should be frequent (every 7-10 days in summer, 15-20 days in winter). Drip irrigation saves 40% water."
+market_price_forecast,Market,When should I sell my onions?,Onion prices typically peak in Oct-Nov and Jan-Feb. Avoid selling during harvest glut (May). Store Rabi onions for 4-6 months to get better rates.
+market_price_forecast,Market,Trends for Cotton prices.,Cotton prices are influenced by global demand and MSP. Prices usually firm up post-January. Check real-time Mandi rates before selling.
+government_scheme,Schemes,Details of PM Kisan Samman Nidhi.,"PM-KISAN provides ₹6,000/year to landholding farmers in 3 installments of ₹2,000 each. Register at the PM-KISAN portal or via Common Service Centers (CSC)."
+government_scheme,Schemes,Subsidy for drip irrigation.,"Under PMKSY (Pradhan Mantri Krishi Sinchayee Yojana), small/marginal farmers get up to 55% subsidy, others get 45% for installing drip/sprinkler systems."
+general_farming_question,General,Best time to sow Mustard.,Mustard is a Rabi crop. Sowing is best done from late September to mid-October. Late sowing increases aphid attack risk.
+general_farming_question,General,How to do seed treatment?,Treat seeds with Carbendazim (2g/kg seed) or Trichoderma viride (10g/kg seed) to prevent soil-borne diseases.

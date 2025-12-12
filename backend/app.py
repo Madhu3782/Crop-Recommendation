@@ -9,7 +9,14 @@ import notification_service
 import os
 import requests
 import threading
+import notification_service
+import os
+import requests
+import threading
 import time
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+from chatbot_brain import brain as chatbot # Import Chatbot Brain Instance
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -40,6 +47,25 @@ try:
     print("Alerts Database Initialized.")
 except Exception as e:
     print(f"Error initializing DB: {e}")
+
+# 3. Load Pest Prediction Model
+model_pest = None
+le_crop_pest = None
+le_region_pest = None
+
+try:
+    with open('pest_model.pkl', 'rb') as f:
+        artifacts = pickle.load(f)
+        model_pest = artifacts['model']
+        le_crop_pest = artifacts['le_crop']
+        le_region_pest = artifacts['le_region']
+    print("Pest Model loaded successfully.")
+except Exception as e:
+    print(f"Warning: pest_model.pkl not found or error loading ({e}). Using fallback logic.")
+
+# --- Register Models with Brain ---
+chatbot.register_models(model_price, model_crop, model_pest)
+
 
 # --- Configuration ---
 OPENWEATHERMAP_API_KEY = "576ae4521e15eb503d6be233a2aa1381"
@@ -708,6 +734,123 @@ def get_districts(state_id):
         return jsonify(res.json())
     except Exception as e:
         return jsonify({"error": str(e)})
+
+# --- Pest Attack Prediction Endpoint ---
+@app.route('/predict_pest_risk', methods=['POST'])
+def predict_pest_risk():
+    try:
+        data = request.get_json()
+        crop = data.get('crop', 'Wheat')
+        region = data.get('region', 'Punjab')
+        temp = float(data.get('temperature', 25))
+        humidity = float(data.get('humidity', 60))
+        rainfall = float(data.get('rainfall', 0))
+
+        # 1. Map Crop to Likely Pest (Simple Knowledge Base)
+        pest_map = {
+            'Wheat': 'Yellow Rust',
+            'Rice': 'Stem Borer',
+            'Maize': 'Fall Armyworm',
+            'Sugarcane': 'Woolly Aphid',
+            'Cotton': 'Pink Bollworm',
+            'Tomato': 'Late Blight',
+            'Potato': 'Early Blight'
+        }
+        pest_name = pest_map.get(crop, 'General Pest')
+
+        # 2. Simulate 7-Day Forecast (Mocking API data for future days based on current)
+        next_7_days_risk = []
+        
+        # Base input encoders
+        crop_enc = 0
+        region_enc = 0
+        
+        if model_pest and le_crop_pest:
+            try:
+                crop_enc = le_crop_pest.transform([crop])[0]
+                region_enc = le_region_pest.transform([region])[0]
+            except:
+                pass 
+
+        current_risk_score = 0
+        
+        for day in range(7):
+            # Simulate weather fluctuation
+            sim_temp = temp + np.random.uniform(-2, 3)
+            sim_hum = humidity + np.random.uniform(-5, 5)
+            sim_rain = max(0, rainfall + np.random.uniform(-10, 10))
+            
+            risk = 0
+            if model_pest:
+                # Predict using ML model
+                input_vector = pd.DataFrame([{
+                    'Crop': crop_enc, 
+                    'Region': region_enc, 
+                    'Temperature': sim_temp, 
+                    'Humidity': sim_hum, 
+                    'Rainfall': sim_rain
+                }])
+                try:
+                    risk = model_pest.predict(input_vector)[0]
+                except:
+                    risk = 50 # Model error fallback
+            else:
+                # Fallback Logic (if training failed/model missing)
+                risk = 20 # Base
+                if sim_hum > 80: risk += 40
+                if sim_temp > 28 and sim_temp < 35: risk += 20
+                if sim_rain > 50: risk += 10
+                
+            risk = max(0, min(100, risk))
+            next_7_days_risk.append(int(risk))
+
+        # Current Risk (Day 0)
+        current_risk_score = next_7_days_risk[0]
+        
+        # Risk Level
+        risk_level = "Low"
+        if current_risk_score > 60: risk_level = "High"
+        elif current_risk_score > 30: risk_level = "Medium"
+
+        # Recommended Spray Day
+        max_risk = max(next_7_days_risk)
+        spray_day = next_7_days_risk.index(max_risk) + 1 
+
+        return jsonify({
+            'pest_name': pest_name,
+            'risk_score': current_risk_score,
+            'risk_level': risk_level,
+            'next_7_days': next_7_days_risk,
+            'recommended_spray_day': spray_day
+        })
+
+    except Exception as e:
+        print(f"Error in pest prediction: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+# --- Chatbot Endpoint ---
+@app.route('/chatbot', methods=['POST'])
+def chatbot_endpoint():
+    try:
+        data = request.get_json()
+        question = data.get('question')
+        language = data.get('language', 'English')
+        
+        if not question:
+            return jsonify({'error': 'Question is required'}), 400
+            
+        # Use brain to generate response
+        # Returns dict: {'answer_en': ..., 'answer_translated': ..., 'language': ...}
+        response_data = chatbot.generate_response(question, language=language)
+        
+        return jsonify({
+            'answer': response_data['answer_translated'], # Main display answer
+            'answer_en': response_data['answer_en'],      # Original Reference
+            'language': response_data['language']
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 # Shut down scheduler when app exits

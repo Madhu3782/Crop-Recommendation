@@ -1,0 +1,2001 @@
+Crop,Region,Temperature,Humidity,Rainfall,Pest_Risk_Score
+Tomato,Maharashtra,16.3,57.6,141.9,30
+Rice,Karnataka,33.2,72.5,2.0,61
+Potato,Haryana,28.8,55.3,120.7,40
+Rice,Maharashtra,33.9,47.7,46.0,26
+Cotton,Karnataka,16.3,69.1,75.5,32
+Rice,Uttar Pradesh,33.4,70.9,9.6,51
+Rice,Punjab,26.3,62.3,22.6,40
+Potato,Punjab,26.0,74.7,41.8,54
+Potato,Punjab,37.7,37.3,52.0,30
+Potato,Karnataka,34.5,32.8,77.4,37
+Cotton,Uttar Pradesh,28.2,39.9,130.7,47
+Tomato,Karnataka,16.4,31.4,107.4,20
+Cotton,Haryana,27.4,37.6,88.5,48
+Rice,Haryana,28.4,57.3,41.3,33
+Wheat,Punjab,39.7,82.0,3.0,42
+Sugarcane,Uttar Pradesh,34.1,35.9,107.2,35
+Maize,Punjab,28.8,82.2,146.4,66
+Rice,Haryana,26.2,31.2,133.6,50
+Tomato,Karnataka,39.9,81.7,45.3,42
+Sugarcane,Karnataka,27.9,33.2,131.2,51
+Rice,Uttar Pradesh,37.3,76.7,72.5,52
+Potato,Maharashtra,35.1,80.8,83.4,80
+Potato,Maharashtra,31.3,38.9,7.1,35
+Maize,Haryana,20.4,67.3,63.4,16
+Potato,Punjab,23.6,42.9,39.1,10
+Rice,Uttar Pradesh,26.9,72.6,4.9,59
+Cotton,Punjab,21.1,87.9,20.7,52
+Maize,Maharashtra,32.8,53.7,53.1,47
+Sugarcane,Punjab,23.4,80.3,28.5,50
+Maize,Haryana,39.0,37.4,8.8,2
+Cotton,Punjab,30.0,61.6,41.0,38
+Wheat,Punjab,33.8,55.8,114.4,51
+Cotton,Punjab,38.4,70.8,64.1,74
+Tomato,Haryana,33.8,66.4,102.3,39
+Sugarcane,Uttar Pradesh,37.1,57.7,67.3,28
+Sugarcane,Maharashtra,21.7,67.4,11.2,8
+Rice,Uttar Pradesh,16.3,56.6,50.9,31
+Potato,Haryana,15.5,34.2,26.9,8
+Wheat,Haryana,17.0,76.5,94.6,46
+Rice,Uttar Pradesh,20.5,42.7,86.1,20
+Potato,Karnataka,30.1,36.9,61.4,37
+Potato,Punjab,26.8,83.0,97.2,87
+Wheat,Maharashtra,29.1,54.7,109.7,45
+Tomato,Punjab,21.6,73.3,69.4,59
+Cotton,Punjab,39.1,89.0,43.6,42
+Sugarcane,Punjab,37.3,64.9,38.9,1
+Potato,Punjab,34.9,74.5,46.4,68
+Sugarcane,Uttar Pradesh,35.7,67.2,62.1,35
+Tomato,Maharashtra,24.2,61.3,98.1,34
+Rice,Haryana,39.1,48.7,8.2,5
+Rice,Karnataka,26.6,49.6,71.8,43
+Cotton,Punjab,34.4,57.6,118.2,42
+Potato,Uttar Pradesh,16.9,59.2,22.1,14
+Maize,Uttar Pradesh,31.8,72.0,103.7,70
+Cotton,Punjab,20.6,47.8,58.5,20
+Maize,Haryana,20.7,39.1,16.5,6
+Potato,Haryana,38.5,40.6,78.2,34
+Wheat,Haryana,27.0,86.2,45.3,67
+Wheat,Haryana,31.2,31.8,7.2,27
+Maize,Uttar Pradesh,36.6,63.3,38.6,17
+Tomato,Uttar Pradesh,40.0,46.5,18.6,15
+Tomato,Haryana,25.4,35.2,22.1,33
+Wheat,Karnataka,30.5,72.4,68.8,82
+Maize,Haryana,24.4,61.4,25.4,16
+Cotton,Punjab,32.8,72.7,25.5,78
+Cotton,Uttar Pradesh,37.5,47.4,135.1,26
+Maize,Maharashtra,21.7,84.9,121.6,54
+Tomato,Karnataka,39.8,74.4,43.4,39
+Cotton,Karnataka,28.6,75.5,35.6,66
+Sugarcane,Karnataka,27.7,38.8,128.5,55
+Potato,Haryana,18.9,78.0,17.1,34
+Maize,Uttar Pradesh,22.6,50.6,17.8,15
+Potato,Karnataka,34.2,31.5,34.5,36
+Potato,Haryana,17.3,68.3,78.4,18
+Maize,Karnataka,38.0,35.3,14.5,1
+Wheat,Maharashtra,26.2,33.0,49.3,29
+Cotton,Haryana,34.1,66.7,47.0,50
+Wheat,Karnataka,32.6,84.4,59.9,70
+Wheat,Haryana,35.8,56.7,53.9,21
+Rice,Punjab,33.4,80.6,16.8,53
+Maize,Haryana,33.8,57.6,45.8,29
+Tomato,Uttar Pradesh,20.2,53.6,71.2,16
+Maize,Uttar Pradesh,23.9,62.6,29.3,8
+Tomato,Punjab,17.8,68.5,103.4,30
+Cotton,Haryana,39.2,55.7,26.1,15
+Sugarcane,Uttar Pradesh,31.4,79.7,44.9,60
+Maize,Haryana,24.0,87.5,57.0,49
+Rice,Punjab,34.8,89.9,30.1,65
+Rice,Punjab,23.8,86.1,45.0,50
+Tomato,Maharashtra,16.6,86.7,69.7,45
+Potato,Maharashtra,22.4,46.1,79.4,23
+Rice,Maharashtra,23.4,51.7,5.0,8
+Cotton,Maharashtra,21.2,51.7,91.3,35
+Wheat,Karnataka,20.4,72.0,6.8,47
+Wheat,Karnataka,36.1,86.3,122.7,63
+Potato,Karnataka,33.6,40.5,33.5,35
+Sugarcane,Haryana,36.9,87.8,109.5,45
+Maize,Karnataka,16.9,64.9,35.8,12
+Sugarcane,Haryana,16.3,62.2,136.4,26
+Potato,Haryana,24.2,35.3,126.6,33
+Maize,Karnataka,37.8,51.8,69.8,33
+Wheat,Uttar Pradesh,16.3,56.7,103.7,33
+Maize,Punjab,27.5,53.4,4.4,28
+Rice,Karnataka,21.8,44.0,132.6,19
+Wheat,Haryana,36.4,44.3,55.8,31
+Maize,Uttar Pradesh,36.9,33.2,124.2,24
+Tomato,Haryana,29.0,56.6,33.5,23
+Tomato,Punjab,21.1,72.2,100.7,56
+Potato,Maharashtra,31.9,59.5,121.7,50
+Cotton,Uttar Pradesh,39.0,69.6,63.6,26
+Maize,Karnataka,39.0,79.0,13.4,50
+Sugarcane,Uttar Pradesh,37.5,78.4,110.7,61
+Cotton,Karnataka,26.4,55.2,88.0,37
+Maize,Punjab,38.1,39.1,61.4,27
+Tomato,Punjab,23.8,67.2,118.5,19
+Sugarcane,Punjab,24.5,47.4,84.6,15
+Tomato,Haryana,29.8,85.3,104.9,71
+Cotton,Haryana,15.6,39.4,36.2,17
+Sugarcane,Haryana,16.3,32.7,85.9,16
+Wheat,Maharashtra,25.8,84.0,81.2,74
+Tomato,Maharashtra,24.2,76.8,148.0,56
+Rice,Uttar Pradesh,35.8,66.5,65.4,28
+Sugarcane,Uttar Pradesh,25.4,41.6,44.5,38
+Tomato,Haryana,34.6,53.5,48.0,36
+Tomato,Uttar Pradesh,19.5,31.4,15.1,17
+Wheat,Maharashtra,24.3,35.5,42.5,4
+Potato,Maharashtra,33.5,83.3,16.9,70
+Cotton,Punjab,18.7,33.1,148.9,31
+Cotton,Maharashtra,31.9,58.2,48.6,21
+Rice,Karnataka,30.6,86.3,89.2,85
+Tomato,Uttar Pradesh,21.5,31.5,33.4,9
+Tomato,Punjab,23.3,43.0,34.6,17
+Cotton,Punjab,27.5,82.4,114.4,95
+Rice,Karnataka,17.2,66.3,20.7,11
+Rice,Karnataka,36.7,35.4,99.1,18
+Tomato,Uttar Pradesh,19.6,59.5,126.2,24
+Tomato,Uttar Pradesh,15.2,40.9,97.1,25
+Maize,Maharashtra,36.6,75.1,27.5,32
+Sugarcane,Maharashtra,37.4,65.3,116.0,26
+Potato,Karnataka,28.4,45.3,47.0,37
+Cotton,Uttar Pradesh,35.4,58.5,48.8,15
+Wheat,Maharashtra,21.0,37.3,131.4,32
+Maize,Uttar Pradesh,21.0,45.8,146.7,19
+Maize,Haryana,22.0,52.7,81.0,16
+Sugarcane,Haryana,29.6,82.8,148.0,68
+Potato,Karnataka,16.9,40.6,82.5,23
+Sugarcane,Haryana,15.2,69.7,101.9,23
+Sugarcane,Karnataka,35.6,60.3,141.8,26
+Rice,Karnataka,35.7,67.2,53.0,16
+Sugarcane,Uttar Pradesh,24.2,47.7,46.0,13
+Maize,Uttar Pradesh,24.4,63.1,81.7,33
+Cotton,Haryana,16.7,47.8,132.6,27
+Wheat,Karnataka,25.9,55.6,31.2,24
+Maize,Punjab,31.9,73.9,54.5,83
+Rice,Uttar Pradesh,32.6,37.7,134.9,43
+Wheat,Haryana,20.2,41.1,17.9,6
+Sugarcane,Haryana,22.6,34.3,131.8,21
+Rice,Punjab,20.1,31.8,87.9,22
+Tomato,Punjab,23.3,43.4,88.0,33
+Sugarcane,Karnataka,30.6,78.1,23.8,62
+Wheat,Maharashtra,33.2,52.8,44.7,26
+Wheat,Maharashtra,28.7,53.3,133.5,55
+Cotton,Karnataka,18.5,50.0,6.9,5
+Wheat,Haryana,34.7,86.4,17.2,55
+Potato,Karnataka,37.8,56.6,40.4,4
+Rice,Haryana,17.1,41.8,121.0,17
+Wheat,Haryana,39.6,53.0,22.4,17
+Potato,Karnataka,38.9,66.3,67.1,16
+Tomato,Maharashtra,35.2,88.4,72.2,51
+Cotton,Karnataka,27.4,35.9,20.9,36
+Potato,Karnataka,36.2,78.8,95.3,56
+Wheat,Maharashtra,33.7,55.8,12.1,23
+Tomato,Punjab,16.7,57.3,72.4,24
+Wheat,Haryana,37.4,33.4,43.6,18
+Tomato,Maharashtra,21.5,84.2,8.6,48
+Rice,Karnataka,37.8,77.3,82.4,50
+Rice,Haryana,32.3,40.6,59.6,38
+Maize,Haryana,18.4,48.1,104.2,25
+Tomato,Punjab,19.9,54.4,130.7,28
+Tomato,Karnataka,32.0,85.7,146.0,84
+Sugarcane,Karnataka,33.9,52.6,142.9,48
+Rice,Punjab,37.2,66.8,10.9,10
+Cotton,Punjab,38.6,81.3,33.4,52
+Tomato,Punjab,38.5,70.7,17.9,36
+Sugarcane,Karnataka,30.0,62.3,110.8,48
+Maize,Haryana,18.5,58.0,102.3,17
+Wheat,Uttar Pradesh,39.1,51.3,11.6,18
+Potato,Uttar Pradesh,31.4,54.9,101.7,39
+Cotton,Karnataka,17.5,79.5,136.8,73
+Potato,Uttar Pradesh,30.9,38.1,87.5,50
+Tomato,Karnataka,36.3,43.9,83.1,32
+Tomato,Karnataka,18.2,45.0,24.8,20
+Tomato,Maharashtra,28.0,50.2,46.5,33
+Wheat,Karnataka,36.6,39.4,47.1,12
+Tomato,Maharashtra,23.3,64.1,63.5,28
+Potato,Punjab,32.0,48.9,66.5,48
+Tomato,Punjab,18.8,65.8,46.4,11
+Maize,Punjab,39.0,54.3,72.7,26
+Rice,Punjab,19.2,58.7,23.9,17
+Sugarcane,Haryana,26.4,78.3,73.5,66
+Sugarcane,Punjab,29.8,89.9,73.3,77
+Tomato,Punjab,17.2,85.8,36.7,50
+Tomato,Haryana,30.8,53.3,87.5,51
+Wheat,Maharashtra,29.1,39.7,74.6,39
+Rice,Maharashtra,36.1,86.4,77.4,46
+Cotton,Maharashtra,36.8,65.1,64.2,35
+Tomato,Punjab,25.1,38.6,134.9,38
+Rice,Haryana,22.4,86.8,65.3,56
+Rice,Maharashtra,27.4,48.6,53.7,39
+Rice,Punjab,32.7,47.0,78.4,46
+Wheat,Uttar Pradesh,34.0,71.7,67.0,85
+Tomato,Maharashtra,33.7,76.6,105.6,76
+Wheat,Haryana,22.4,36.7,25.9,0
+Wheat,Maharashtra,24.1,64.3,18.3,7
+Sugarcane,Haryana,31.3,40.1,74.1,37
+Potato,Uttar Pradesh,22.5,38.3,102.1,23
+Cotton,Haryana,39.2,32.4,100.0,25
+Tomato,Maharashtra,29.7,64.5,15.3,37
+Cotton,Maharashtra,31.5,35.7,72.2,39
+Potato,Uttar Pradesh,28.3,76.5,149.2,77
+Rice,Maharashtra,20.1,38.3,107.7,28
+Rice,Punjab,22.1,38.5,5.5,11
+Maize,Haryana,18.6,73.0,67.8,53
+Maize,Karnataka,28.6,46.4,73.7,40
+Potato,Karnataka,38.7,83.0,105.5,78
+Sugarcane,Karnataka,17.5,43.9,91.4,29
+Maize,Haryana,29.9,34.9,66.6,39
+Tomato,Punjab,27.2,40.9,20.6,30
+Rice,Haryana,21.9,87.9,23.5,44
+Wheat,Punjab,21.7,40.0,23.7,5
+Maize,Uttar Pradesh,19.4,77.7,69.9,65
+Rice,Karnataka,23.0,87.1,38.5,49
+Cotton,Karnataka,28.8,54.0,39.3,29
+Cotton,Karnataka,39.4,51.2,26.2,2
+Maize,Karnataka,20.3,79.9,41.1,36
+Sugarcane,Maharashtra,29.0,57.7,75.0,47
+Maize,Haryana,34.9,52.9,87.7,42
+Tomato,Karnataka,19.0,45.0,5.2,2
+Wheat,Haryana,27.6,81.9,21.2,69
+Potato,Karnataka,15.9,41.7,129.8,27
+Maize,Uttar Pradesh,29.8,64.8,139.3,41
+Tomato,Maharashtra,32.1,87.6,141.3,82
+Tomato,Punjab,24.7,69.3,41.3,15
+Cotton,Punjab,36.7,47.9,116.4,35
+Cotton,Haryana,32.6,67.8,92.2,48
+Maize,Haryana,15.6,79.2,64.5,47
+Cotton,Punjab,25.2,39.5,131.7,36
+Cotton,Uttar Pradesh,24.7,44.1,91.4,19
+Maize,Karnataka,33.2,86.8,82.0,80
+Cotton,Haryana,39.4,72.4,47.8,59
+Wheat,Karnataka,16.6,85.5,126.9,54
+Wheat,Haryana,24.5,44.8,60.7,33
+Wheat,Maharashtra,35.4,53.1,15.6,14
+Cotton,Uttar Pradesh,26.1,63.8,129.0,58
+Potato,Uttar Pradesh,16.5,40.3,23.2,20
+Sugarcane,Haryana,33.3,57.9,76.1,41
+Sugarcane,Uttar Pradesh,35.0,44.5,104.6,29
+Rice,Uttar Pradesh,31.2,83.7,76.9,80
+Rice,Maharashtra,23.0,76.2,135.0,45
+Cotton,Karnataka,30.3,88.2,110.3,76
+Maize,Haryana,33.9,80.5,97.4,80
+Rice,Karnataka,19.1,69.2,127.5,33
+Tomato,Haryana,17.4,33.9,90.9,31
+Sugarcane,Haryana,37.6,75.7,25.6,35
+Cotton,Haryana,18.4,69.4,76.5,27
+Potato,Maharashtra,29.2,45.6,66.8,39
+Sugarcane,Karnataka,31.6,40.7,25.2,20
+Sugarcane,Uttar Pradesh,31.4,68.8,100.3,38
+Tomato,Maharashtra,26.1,51.9,35.6,20
+Sugarcane,Uttar Pradesh,35.0,54.9,12.3,15
+Cotton,Punjab,33.1,63.5,135.1,55
+Tomato,Punjab,35.3,55.5,12.9,20
+Maize,Punjab,16.5,80.5,148.1,49
+Wheat,Haryana,30.7,84.7,13.8,64
+Cotton,Punjab,17.0,42.5,144.1,22
+Wheat,Punjab,39.5,40.4,118.8,32
+Cotton,Karnataka,27.9,39.9,108.4,38
+Potato,Haryana,33.3,79.7,124.0,66
+Sugarcane,Uttar Pradesh,32.7,59.7,76.8,42
+Potato,Punjab,19.5,76.7,82.8,48
+Rice,Uttar Pradesh,19.6,81.1,79.7,58
+Potato,Uttar Pradesh,28.8,55.6,67.6,38
+Rice,Haryana,26.2,82.7,42.8,57
+Sugarcane,Uttar Pradesh,35.6,42.5,128.0,32
+Maize,Karnataka,26.0,61.1,76.5,42
+Wheat,Maharashtra,24.3,64.4,136.0,18
+Cotton,Maharashtra,33.4,41.8,98.2,42
+Rice,Punjab,21.4,31.6,2.5,7
+Cotton,Punjab,17.7,88.0,134.9,61
+Cotton,Haryana,26.5,66.4,108.3,62
+Potato,Uttar Pradesh,20.1,85.3,19.1,53
+Wheat,Haryana,17.9,46.5,43.7,4
+Maize,Uttar Pradesh,16.1,83.9,16.9,34
+Cotton,Karnataka,36.1,39.2,3.1,3
+Wheat,Maharashtra,33.4,61.2,119.5,37
+Cotton,Haryana,15.2,33.0,72.0,29
+Tomato,Haryana,20.0,86.7,110.4,55
+Cotton,Uttar Pradesh,30.9,40.9,83.6,44
+Wheat,Uttar Pradesh,26.9,37.6,80.7,54
+Sugarcane,Uttar Pradesh,15.2,66.1,61.8,34
+Wheat,Uttar Pradesh,27.2,32.6,43.7,31
+Sugarcane,Uttar Pradesh,27.9,65.1,11.1,33
+Wheat,Karnataka,33.7,56.3,55.4,36
+Maize,Maharashtra,15.4,77.4,53.3,54
+Potato,Uttar Pradesh,28.1,37.0,84.1,50
+Maize,Uttar Pradesh,28.0,55.5,132.6,42
+Rice,Uttar Pradesh,27.2,62.8,30.7,32
+Tomato,Karnataka,39.7,85.9,19.3,32
+Maize,Haryana,29.4,74.5,126.5,83
+Rice,Uttar Pradesh,22.8,56.0,120.0,18
+Wheat,Uttar Pradesh,26.8,78.5,133.1,74
+Potato,Punjab,29.5,53.1,85.7,44
+Sugarcane,Karnataka,16.3,30.2,84.7,17
+Rice,Punjab,20.3,36.6,58.8,35
+Rice,Karnataka,30.8,88.5,22.6,53
+Wheat,Karnataka,25.7,38.1,87.2,38
+Wheat,Karnataka,20.5,72.0,104.6,60
+Maize,Punjab,19.1,81.2,48.8,38
+Sugarcane,Karnataka,20.9,34.8,122.0,31
+Tomato,Haryana,37.5,53.6,135.0,19
+Potato,Uttar Pradesh,36.5,36.9,39.4,13
+Potato,Haryana,33.1,76.5,99.8,84
+Cotton,Uttar Pradesh,39.0,51.9,26.0,5
+Sugarcane,Punjab,36.4,79.5,76.3,53
+Maize,Haryana,22.0,31.4,142.0,23
+Potato,Karnataka,18.3,37.4,70.7,15
+Rice,Karnataka,20.8,82.5,124.5,55
+Wheat,Punjab,29.5,77.2,66.5,85
+Potato,Haryana,36.5,44.1,40.8,3
+Sugarcane,Karnataka,24.4,73.1,96.4,61
+Tomato,Karnataka,17.6,80.3,77.3,48
+Tomato,Punjab,32.7,73.6,135.7,68
+Wheat,Maharashtra,30.1,39.0,126.3,54
+Tomato,Punjab,36.9,79.8,113.2,63
+Tomato,Punjab,18.7,59.7,111.5,17
+Cotton,Punjab,31.1,41.3,136.1,53
+Sugarcane,Haryana,36.8,82.4,81.1,57
+Maize,Haryana,32.7,56.2,62.8,50
+Maize,Maharashtra,19.2,52.4,94.3,34
+Tomato,Punjab,37.5,82.9,81.3,51
+Maize,Maharashtra,18.0,75.3,116.2,57
+Potato,Punjab,28.9,65.2,141.4,54
+Sugarcane,Maharashtra,34.9,43.9,140.1,44
+Potato,Maharashtra,33.2,57.5,89.9,38
+Sugarcane,Karnataka,26.9,85.9,111.9,68
+Potato,Punjab,38.1,30.8,39.5,18
+Rice,Punjab,21.4,84.6,33.5,40
+Sugarcane,Haryana,32.0,89.7,66.0,66
+Cotton,Maharashtra,16.9,46.5,0.9,15
+Tomato,Haryana,28.4,73.9,29.5,56
+Potato,Punjab,29.8,30.8,54.7,52
+Potato,Maharashtra,37.4,74.3,79.3,59
+Sugarcane,Uttar Pradesh,37.6,64.4,69.5,17
+Rice,Maharashtra,17.5,61.3,110.7,22
+Potato,Punjab,31.4,60.0,106.4,46
+Maize,Haryana,37.8,36.8,112.4,27
+Tomato,Maharashtra,24.2,85.6,113.2,46
+Rice,Karnataka,38.1,67.7,123.0,30
+Maize,Uttar Pradesh,28.6,85.2,73.0,80
+Tomato,Karnataka,22.4,80.9,69.3,56
+Potato,Haryana,39.3,74.0,10.0,42
+Maize,Punjab,36.8,88.7,19.0,44
+Tomato,Uttar Pradesh,22.2,44.9,78.6,28
+Tomato,Haryana,18.9,65.8,66.7,17
+Tomato,Haryana,33.8,86.6,118.6,79
+Cotton,Punjab,32.0,81.1,60.9,85
+Wheat,Punjab,17.7,70.9,72.9,54
+Sugarcane,Haryana,23.9,36.4,126.6,27
+Maize,Karnataka,33.1,75.1,121.8,82
+Sugarcane,Haryana,17.6,42.3,94.0,28
+Tomato,Haryana,38.8,87.2,82.5,46
+Sugarcane,Uttar Pradesh,16.1,72.7,37.4,36
+Tomato,Uttar Pradesh,17.4,53.2,88.4,33
+Wheat,Haryana,29.8,42.8,34.8,26
+Potato,Maharashtra,27.9,79.1,92.2,71
+Sugarcane,Punjab,20.4,83.8,110.8,48
+Wheat,Punjab,21.9,50.8,10.0,19
+Cotton,Uttar Pradesh,15.4,40.0,15.8,6
+Wheat,Haryana,29.7,85.1,85.9,69
+Maize,Punjab,22.9,57.8,124.3,26
+Maize,Haryana,29.7,41.1,85.6,49
+Rice,Maharashtra,34.6,86.3,117.7,81
+Cotton,Maharashtra,32.8,82.8,21.3,76
+Wheat,Haryana,40.0,55.1,106.0,26
+Maize,Haryana,35.0,33.1,25.7,7
+Maize,Uttar Pradesh,24.6,63.1,106.2,18
+Tomato,Maharashtra,37.9,68.2,3.4,9
+Maize,Uttar Pradesh,38.1,80.5,60.1,52
+Sugarcane,Karnataka,39.2,44.6,124.1,29
+Sugarcane,Punjab,36.2,52.0,60.1,28
+Sugarcane,Punjab,37.8,53.7,144.5,24
+Maize,Haryana,24.5,43.9,3.6,8
+Tomato,Haryana,37.9,44.5,142.7,24
+Potato,Haryana,35.9,35.3,7.0,15
+Potato,Punjab,31.3,75.2,9.7,58
+Tomato,Uttar Pradesh,36.0,62.4,92.1,21
+Tomato,Karnataka,25.6,54.0,83.6,47
+Rice,Uttar Pradesh,29.3,73.2,96.8,77
+Cotton,Punjab,19.4,57.5,47.0,17
+Tomato,Haryana,31.3,35.5,141.6,48
+Maize,Karnataka,34.7,58.8,5.9,22
+Rice,Punjab,36.4,79.0,56.5,60
+Cotton,Uttar Pradesh,22.3,69.5,62.7,44
+Rice,Karnataka,21.5,57.8,56.1,16
+Potato,Haryana,33.7,60.7,116.4,55
+Maize,Maharashtra,25.5,55.8,127.6,55
+Sugarcane,Punjab,23.7,42.5,35.2,9
+Maize,Uttar Pradesh,16.2,72.3,59.6,61
+Maize,Karnataka,21.5,73.9,9.7,40
+Sugarcane,Haryana,32.9,79.7,19.7,52
+Sugarcane,Punjab,24.8,55.2,57.9,18
+Sugarcane,Punjab,30.2,38.8,149.0,51
+Sugarcane,Maharashtra,32.5,56.1,99.8,51
+Wheat,Maharashtra,22.6,37.1,32.5,15
+Potato,Uttar Pradesh,28.4,72.3,12.5,53
+Cotton,Uttar Pradesh,37.5,43.1,112.9,20
+Potato,Punjab,33.3,37.2,98.4,52
+Sugarcane,Haryana,39.6,84.7,27.3,49
+Tomato,Punjab,37.2,62.4,57.7,35
+Rice,Haryana,38.9,63.2,66.4,16
+Sugarcane,Uttar Pradesh,19.8,64.8,134.5,28
+Cotton,Haryana,20.9,87.1,85.3,67
+Potato,Haryana,21.9,85.0,148.9,81
+Cotton,Karnataka,28.0,89.0,51.5,95
+Potato,Punjab,26.3,56.8,56.7,40
+Potato,Maharashtra,18.7,75.9,81.4,52
+Tomato,Haryana,38.1,62.5,143.3,19
+Tomato,Uttar Pradesh,34.9,62.9,17.3,22
+Sugarcane,Maharashtra,29.4,61.6,127.6,48
+Wheat,Maharashtra,34.3,81.0,115.1,85
+Potato,Punjab,19.2,44.9,69.5,17
+Maize,Karnataka,24.9,84.1,4.2,38
+Potato,Punjab,21.2,63.1,101.5,23
+Potato,Maharashtra,37.4,45.2,118.4,22
+Wheat,Karnataka,38.8,82.5,85.2,62
+Wheat,Uttar Pradesh,16.2,59.4,37.2,17
+Maize,Karnataka,18.0,52.2,19.4,12
+Potato,Karnataka,30.2,82.8,145.8,88
+Cotton,Karnataka,33.7,56.2,138.8,50
+Maize,Karnataka,30.8,82.6,15.0,65
+Sugarcane,Punjab,26.3,63.8,61.1,54
+Potato,Haryana,30.7,85.3,73.2,86
+Tomato,Uttar Pradesh,32.2,51.7,32.8,26
+Maize,Uttar Pradesh,23.6,38.7,76.8,28
+Tomato,Karnataka,16.6,38.5,19.6,20
+Sugarcane,Maharashtra,29.7,45.7,103.4,45
+Maize,Haryana,21.4,61.7,48.7,4
+Maize,Maharashtra,33.1,74.5,37.7,68
+Maize,Haryana,27.3,57.3,54.6,41
+Rice,Haryana,21.2,81.9,107.7,65
+Sugarcane,Uttar Pradesh,31.0,58.2,4.9,30
+Maize,Karnataka,25.3,67.5,21.1,33
+Maize,Uttar Pradesh,18.7,61.6,1.4,20
+Cotton,Punjab,28.9,87.9,1.5,65
+Sugarcane,Maharashtra,15.7,39.5,4.4,15
+Sugarcane,Karnataka,32.7,71.0,132.4,77
+Potato,Punjab,37.5,54.4,122.2,26
+Sugarcane,Haryana,31.8,35.3,10.2,37
+Tomato,Karnataka,21.6,80.8,47.5,32
+Sugarcane,Maharashtra,21.6,82.6,26.7,31
+Rice,Punjab,18.8,48.8,35.9,1
+Rice,Maharashtra,25.3,80.7,38.7,66
+Wheat,Maharashtra,30.4,47.6,74.4,42
+Cotton,Karnataka,34.0,68.6,2.1,48
+Potato,Maharashtra,26.9,78.1,66.2,79
+Cotton,Uttar Pradesh,18.6,37.1,70.1,28
+Maize,Karnataka,23.4,89.8,116.4,61
+Sugarcane,Punjab,26.5,84.7,147.8,81
+Rice,Uttar Pradesh,24.8,57.6,28.3,19
+Tomato,Uttar Pradesh,30.4,64.4,6.5,23
+Cotton,Punjab,26.2,48.2,139.6,44
+Cotton,Karnataka,36.1,76.5,63.2,65
+Cotton,Punjab,30.9,62.1,60.8,56
+Potato,Uttar Pradesh,17.1,81.4,143.1,83
+Tomato,Uttar Pradesh,29.8,77.1,9.1,60
+Cotton,Punjab,16.8,86.6,94.1,72
+Sugarcane,Maharashtra,22.8,82.3,55.4,61
+Sugarcane,Uttar Pradesh,36.2,81.1,131.1,63
+Cotton,Karnataka,21.5,67.0,75.9,27
+Wheat,Maharashtra,25.1,82.0,14.1,68
+Cotton,Maharashtra,22.1,41.5,3.6,8
+Wheat,Uttar Pradesh,22.0,49.9,109.8,28
+Tomato,Punjab,39.4,80.9,5.4,41
+Wheat,Maharashtra,28.3,67.0,46.3,32
+Cotton,Uttar Pradesh,32.5,70.8,77.4,89
+Rice,Karnataka,35.8,33.6,133.1,19
+Sugarcane,Karnataka,19.5,75.3,70.3,50
+Cotton,Karnataka,31.0,69.1,74.5,57
+Rice,Karnataka,20.6,77.2,61.8,52
+Potato,Punjab,23.9,64.3,94.3,16
+Wheat,Punjab,18.1,76.7,106.9,50
+Wheat,Punjab,17.2,52.2,10.9,10
+Wheat,Uttar Pradesh,29.1,30.5,24.3,34
+Wheat,Uttar Pradesh,34.6,42.3,141.6,36
+Cotton,Uttar Pradesh,23.2,62.2,110.6,41
+Tomato,Uttar Pradesh,36.4,81.3,77.4,50
+Potato,Uttar Pradesh,32.3,53.4,63.0,38
+Potato,Punjab,29.7,38.3,107.9,36
+Tomato,Haryana,30.8,86.0,19.8,62
+Sugarcane,Punjab,19.6,65.1,72.0,18
+Wheat,Karnataka,31.5,35.9,12.2,21
+Cotton,Maharashtra,18.7,36.9,8.7,13
+Maize,Haryana,23.5,32.0,11.4,10
+Rice,Uttar Pradesh,31.8,41.0,82.7,49
+Potato,Haryana,32.4,81.5,90.1,100
+Cotton,Punjab,19.5,47.7,30.8,19
+Rice,Maharashtra,25.3,44.2,143.7,39
+Cotton,Haryana,27.5,79.5,108.8,95
+Tomato,Haryana,18.0,68.7,146.5,26
+Maize,Karnataka,20.3,52.3,29.1,1
+Potato,Punjab,27.1,72.7,36.1,50
+Potato,Maharashtra,38.1,49.8,77.4,29
+Sugarcane,Haryana,31.0,43.9,125.6,49
+Cotton,Punjab,38.9,43.3,66.5,30
+Maize,Punjab,35.3,51.3,26.4,10
+Tomato,Maharashtra,28.8,61.7,71.5,39
+Cotton,Punjab,31.8,76.4,95.0,80
+Potato,Uttar Pradesh,26.1,74.6,76.3,70
+Potato,Karnataka,27.6,59.7,72.1,55
+Cotton,Karnataka,35.2,68.0,17.3,22
+Maize,Haryana,17.2,87.5,17.8,49
+Rice,Haryana,28.7,67.8,57.9,51
+Maize,Maharashtra,29.2,69.5,124.6,47
+Cotton,Haryana,29.9,55.7,15.9,22
+Maize,Haryana,21.5,74.5,57.8,58
+Maize,Maharashtra,21.8,41.3,145.9,32
+Sugarcane,Maharashtra,18.5,64.5,37.7,2
+Potato,Karnataka,34.2,75.9,106.3,85
+Wheat,Punjab,20.6,80.7,123.5,59
+Wheat,Maharashtra,25.3,64.2,102.3,50
+Cotton,Punjab,18.5,45.1,71.3,25
+Maize,Uttar Pradesh,24.9,88.1,47.2,41
+Wheat,Karnataka,35.5,58.9,61.3,33
+Wheat,Punjab,21.3,53.3,11.9,9
+Maize,Punjab,29.4,72.3,70.0,84
+Tomato,Punjab,39.4,64.7,47.7,3
+Cotton,Uttar Pradesh,18.6,50.9,76.4,19
+Cotton,Punjab,34.7,80.5,51.7,94
+Rice,Karnataka,23.3,51.3,148.4,30
+Maize,Uttar Pradesh,15.4,48.8,83.4,20
+Cotton,Karnataka,39.4,53.4,111.3,34
+Sugarcane,Uttar Pradesh,34.2,90.0,105.1,69
+Sugarcane,Punjab,34.0,80.8,114.1,79
+Tomato,Punjab,27.0,89.6,110.5,65
+Potato,Karnataka,36.9,61.9,97.6,20
+Sugarcane,Maharashtra,16.5,84.0,21.3,30
+Sugarcane,Punjab,27.8,83.6,63.7,67
+Rice,Uttar Pradesh,29.5,42.9,31.0,35
+Sugarcane,Karnataka,33.9,72.7,88.0,80
+Maize,Punjab,29.7,31.3,116.9,38
+Potato,Maharashtra,27.0,67.4,8.1,39
+Rice,Maharashtra,22.4,67.9,147.8,27
+Wheat,Uttar Pradesh,16.5,57.6,128.3,31
+Rice,Haryana,20.4,42.2,110.4,21
+Rice,Haryana,17.0,85.7,139.6,63
+Rice,Punjab,35.1,88.2,87.6,56
+Wheat,Haryana,16.7,44.8,75.6,21
+Rice,Haryana,20.4,47.7,133.7,27
+Sugarcane,Karnataka,27.3,48.8,142.8,54
+Maize,Karnataka,30.2,53.5,112.6,37
+Sugarcane,Maharashtra,33.6,83.3,110.3,65
+Sugarcane,Uttar Pradesh,39.3,66.1,12.7,12
+Rice,Karnataka,25.3,31.8,101.6,42
+Tomato,Maharashtra,31.4,44.1,91.5,41
+Maize,Maharashtra,16.7,63.7,68.8,28
+Wheat,Uttar Pradesh,15.5,58.6,10.2,11
+Cotton,Punjab,32.4,64.2,123.3,53
+Tomato,Maharashtra,27.6,51.2,82.8,45
+Maize,Maharashtra,15.9,77.6,136.6,54
+Maize,Uttar Pradesh,37.4,77.8,83.5,48
+Maize,Punjab,36.0,35.2,92.4,22
+Tomato,Haryana,28.3,64.1,45.9,25
+Maize,Maharashtra,19.4,84.1,120.0,45
+Tomato,Karnataka,30.7,31.4,126.9,50
+Cotton,Punjab,16.7,53.0,103.6,16
+Sugarcane,Uttar Pradesh,35.6,80.7,68.9,54
+Potato,Punjab,30.1,88.9,5.9,75
+Wheat,Maharashtra,26.9,85.1,30.7,55
+Sugarcane,Uttar Pradesh,35.4,49.4,17.1,0
+Maize,Karnataka,35.5,52.3,65.5,20
+Wheat,Punjab,27.1,38.7,35.8,22
+Wheat,Karnataka,35.2,78.5,75.8,46
+Tomato,Punjab,22.3,58.4,31.1,4
+Wheat,Haryana,22.7,48.9,35.0,14
+Cotton,Punjab,35.0,42.1,107.6,31
+Wheat,Haryana,33.9,65.5,99.0,53
+Tomato,Maharashtra,34.1,38.2,89.9,43
+Cotton,Karnataka,16.6,69.5,46.4,28
+Wheat,Karnataka,31.1,33.1,66.4,53
+Maize,Haryana,32.7,76.6,24.4,52
+Wheat,Uttar Pradesh,18.6,60.9,123.9,31
+Wheat,Uttar Pradesh,38.1,84.7,75.3,61
+Sugarcane,Uttar Pradesh,35.7,48.9,56.4,27
+Sugarcane,Haryana,33.9,84.4,110.8,75
+Sugarcane,Uttar Pradesh,18.3,88.5,142.9,55
+Maize,Haryana,16.7,62.1,129.5,18
+Rice,Karnataka,18.9,80.7,87.4,52
+Sugarcane,Maharashtra,30.1,81.6,13.3,52
+Wheat,Haryana,29.7,59.5,139.2,51
+Tomato,Haryana,16.6,87.4,65.7,63
+Sugarcane,Punjab,33.7,78.2,116.0,66
+Rice,Maharashtra,32.7,36.9,30.2,31
+Potato,Maharashtra,38.0,34.3,112.7,18
+Wheat,Karnataka,38.1,63.7,19.6,13
+Cotton,Uttar Pradesh,27.7,35.9,31.4,22
+Potato,Haryana,21.6,76.9,77.9,50
+Cotton,Haryana,40.0,55.3,56.7,22
+Rice,Haryana,37.0,60.3,15.3,0
+Tomato,Punjab,28.3,31.0,63.2,47
+Cotton,Karnataka,18.2,85.7,54.7,65
+Potato,Uttar Pradesh,31.7,37.2,141.4,46
+Tomato,Punjab,37.2,76.0,96.4,48
+Potato,Uttar Pradesh,38.3,37.0,135.2,26
+Tomato,Haryana,22.6,74.1,103.7,56
+Wheat,Punjab,28.5,33.3,48.0,38
+Cotton,Punjab,25.8,62.1,9.8,44
+Rice,Maharashtra,34.0,85.3,15.2,62
+Potato,Maharashtra,17.5,42.6,35.1,0
+Wheat,Uttar Pradesh,20.1,47.6,35.6,1
+Tomato,Haryana,32.4,71.3,95.0,67
+Tomato,Maharashtra,29.8,68.9,4.8,31
+Cotton,Maharashtra,21.6,75.7,71.0,70
+Sugarcane,Uttar Pradesh,38.3,48.3,55.5,21
+Wheat,Punjab,24.3,83.9,96.3,48
+Cotton,Haryana,21.9,71.0,66.1,55
+Sugarcane,Haryana,24.8,74.8,37.8,34
+Wheat,Maharashtra,22.8,50.1,56.8,34
+Cotton,Punjab,35.3,53.8,129.6,28
+Cotton,Karnataka,38.1,43.4,84.9,15
+Tomato,Maharashtra,24.9,83.2,0.8,49
+Potato,Maharashtra,32.6,76.6,7.9,54
+Sugarcane,Uttar Pradesh,33.9,35.3,44.0,36
+Wheat,Haryana,32.5,75.2,55.8,66
+Cotton,Maharashtra,30.8,39.1,95.5,52
+Tomato,Punjab,37.3,40.4,115.7,30
+Tomato,Uttar Pradesh,29.8,54.0,75.6,51
+Tomato,Karnataka,30.3,68.0,48.7,23
+Maize,Haryana,21.6,39.8,27.8,13
+Wheat,Haryana,22.2,61.6,28.2,19
+Maize,Uttar Pradesh,22.8,40.4,105.7,33
+Potato,Maharashtra,36.1,79.2,86.3,53
+Sugarcane,Karnataka,16.6,63.0,56.4,27
+Sugarcane,Karnataka,30.8,53.7,115.2,40
+Tomato,Maharashtra,29.6,67.0,140.1,52
+Cotton,Haryana,17.3,81.2,134.4,57
+Tomato,Uttar Pradesh,32.7,32.0,102.2,36
+Potato,Punjab,30.9,66.3,35.0,22
+Potato,Uttar Pradesh,29.1,78.3,113.6,83
+Rice,Haryana,36.4,60.1,68.1,23
+Sugarcane,Haryana,19.8,63.3,110.0,21
+Sugarcane,Maharashtra,25.0,30.3,34.2,15
+Maize,Uttar Pradesh,32.4,77.2,26.6,59
+Cotton,Haryana,22.2,37.7,90.9,18
+Maize,Haryana,36.7,50.0,68.0,25
+Cotton,Uttar Pradesh,22.3,62.9,55.7,39
+Tomato,Karnataka,17.5,48.0,134.8,22
+Sugarcane,Karnataka,38.3,85.2,20.5,45
+Potato,Punjab,37.0,63.2,106.1,21
+Maize,Haryana,21.4,70.5,116.0,59
+Cotton,Punjab,33.4,54.6,57.6,42
+Potato,Maharashtra,29.4,87.1,100.0,95
+Maize,Punjab,36.5,67.7,144.7,17
+Cotton,Maharashtra,15.6,57.5,37.3,19
+Maize,Uttar Pradesh,39.0,88.8,85.3,48
+Potato,Karnataka,32.4,79.3,138.4,81
+Potato,Maharashtra,27.9,64.6,69.1,42
+Potato,Uttar Pradesh,23.9,46.5,17.7,6
+Cotton,Uttar Pradesh,22.0,79.9,72.5,64
+Rice,Maharashtra,35.7,50.5,113.6,18
+Cotton,Karnataka,39.3,44.3,123.0,15
+Wheat,Haryana,33.7,33.7,28.8,28
+Rice,Karnataka,38.4,63.3,26.8,4
+Tomato,Uttar Pradesh,27.1,47.6,109.9,48
+Sugarcane,Haryana,38.7,34.2,127.0,25
+Potato,Punjab,33.8,44.4,6.0,36
+Sugarcane,Karnataka,25.3,87.9,54.5,82
+Potato,Punjab,23.6,81.4,9.7,64
+Cotton,Haryana,25.8,43.8,143.5,36
+Potato,Uttar Pradesh,39.7,54.6,129.0,22
+Cotton,Karnataka,24.0,48.0,98.1,18
+Maize,Uttar Pradesh,22.9,55.3,147.3,30
+Cotton,Karnataka,36.8,54.3,50.6,22
+Tomato,Haryana,24.4,72.0,52.4,54
+Potato,Punjab,15.7,70.7,144.4,64
+Sugarcane,Uttar Pradesh,39.5,40.7,71.8,20
+Cotton,Uttar Pradesh,21.1,83.8,29.2,44
+Maize,Uttar Pradesh,21.0,50.8,54.6,31
+Tomato,Karnataka,32.4,44.5,71.0,53
+Wheat,Haryana,18.6,46.1,29.6,18
+Tomato,Punjab,20.7,52.9,11.4,13
+Cotton,Karnataka,22.2,88.4,23.7,57
+Cotton,Maharashtra,22.6,62.8,68.6,37
+Maize,Maharashtra,23.2,87.6,22.9,39
+Tomato,Karnataka,24.9,67.9,17.7,5
+Tomato,Uttar Pradesh,25.3,44.5,124.0,41
+Maize,Maharashtra,23.8,50.1,75.3,26
+Sugarcane,Karnataka,21.7,46.3,120.2,35
+Tomato,Karnataka,37.1,80.6,6.3,44
+Cotton,Karnataka,16.1,73.2,84.1,60
+Potato,Uttar Pradesh,35.9,39.9,146.0,15
+Sugarcane,Karnataka,39.7,72.2,80.8,47
+Potato,Punjab,39.1,82.3,41.3,50
+Rice,Maharashtra,33.0,72.1,9.4,57
+Sugarcane,Karnataka,19.4,64.7,99.2,24
+Sugarcane,Maharashtra,24.8,34.1,17.1,8
+Sugarcane,Karnataka,15.8,69.2,83.6,15
+Potato,Maharashtra,28.0,46.4,105.9,51
+Cotton,Haryana,25.0,80.3,136.7,62
+Wheat,Uttar Pradesh,37.9,43.6,58.2,30
+Rice,Haryana,27.8,88.5,16.2,51
+Potato,Haryana,18.8,80.5,144.6,81
+Tomato,Maharashtra,31.8,58.8,86.2,43
+Maize,Maharashtra,27.1,41.2,138.7,48
+Potato,Maharashtra,36.1,47.0,110.7,18
+Cotton,Haryana,27.1,86.9,72.6,76
+Cotton,Maharashtra,28.3,59.6,106.2,53
+Rice,Uttar Pradesh,16.5,85.9,132.4,52
+Wheat,Punjab,36.6,76.0,15.2,48
+Cotton,Maharashtra,21.7,54.5,47.8,1
+Tomato,Haryana,30.5,40.6,38.0,21
+Potato,Punjab,37.6,68.5,43.1,9
+Tomato,Haryana,33.5,89.7,19.0,52
+Potato,Karnataka,37.9,57.7,103.2,30
+Sugarcane,Karnataka,22.4,58.6,143.6,24
+Rice,Karnataka,33.0,74.9,49.4,50
+Sugarcane,Karnataka,31.8,55.8,127.3,51
+Sugarcane,Maharashtra,18.4,61.2,6.4,11
+Maize,Uttar Pradesh,33.6,61.9,132.1,51
+Rice,Punjab,34.0,40.2,85.2,51
+Maize,Haryana,24.5,36.2,0.1,3
+Rice,Haryana,34.3,41.7,56.1,43
+Rice,Maharashtra,25.8,48.6,130.0,38
+Sugarcane,Karnataka,20.7,64.4,8.0,16
+Cotton,Haryana,25.0,37.2,44.3,13
+Potato,Punjab,35.0,35.2,59.2,26
+Potato,Punjab,22.6,64.2,109.0,20
+Sugarcane,Uttar Pradesh,15.3,72.7,48.9,31
+Rice,Maharashtra,21.0,40.0,82.7,19
+Tomato,Maharashtra,33.1,73.0,105.1,83
+Rice,Haryana,27.6,58.5,134.1,52
+Potato,Punjab,35.8,78.0,83.6,61
+Tomato,Maharashtra,27.4,82.5,89.9,65
+Sugarcane,Haryana,21.7,89.9,135.4,51
+Rice,Punjab,36.7,43.4,75.6,16
+Tomato,Punjab,34.5,72.5,110.7,79
+Cotton,Karnataka,22.3,67.8,35.8,19
+Tomato,Karnataka,39.5,36.1,110.7,16
+Sugarcane,Uttar Pradesh,39.9,44.7,44.5,4
+Rice,Maharashtra,35.8,79.7,131.2,56
+Maize,Punjab,38.7,76.7,52.5,59
+Maize,Karnataka,38.7,77.0,115.5,65
+Tomato,Uttar Pradesh,20.0,33.5,127.2,35
+Rice,Punjab,20.1,66.5,0.2,8
+Rice,Haryana,20.4,82.7,117.4,53
+Cotton,Haryana,15.7,85.5,17.9,45
+Cotton,Maharashtra,36.0,69.0,42.7,20
+Potato,Karnataka,24.0,85.1,138.7,72
+Wheat,Karnataka,30.9,44.7,95.4,37
+Rice,Maharashtra,36.6,84.5,28.1,32
+Tomato,Karnataka,33.4,78.0,139.4,66
+Tomato,Uttar Pradesh,38.5,40.8,78.3,24
+Tomato,Maharashtra,17.2,31.5,80.2,29
+Sugarcane,Karnataka,38.3,75.3,122.3,45
+Sugarcane,Punjab,22.3,46.3,57.4,31
+Cotton,Haryana,32.8,80.8,115.9,91
+Sugarcane,Haryana,21.8,78.5,64.1,61
+Wheat,Haryana,22.2,30.3,78.2,27
+Maize,Uttar Pradesh,37.1,37.7,28.9,15
+Wheat,Uttar Pradesh,35.5,85.7,79.7,61
+Cotton,Punjab,19.6,69.1,82.1,28
+Potato,Karnataka,31.7,83.8,52.1,94
+Maize,Haryana,24.6,55.0,3.8,0
+Cotton,Haryana,32.7,62.7,47.6,32
+Maize,Karnataka,35.0,42.7,43.0,9
+Maize,Punjab,18.9,72.8,131.5,57
+Wheat,Punjab,31.6,50.0,116.5,53
+Cotton,Punjab,33.4,76.3,139.8,91
+Rice,Haryana,33.0,41.4,99.8,47
+Wheat,Uttar Pradesh,24.4,42.8,124.0,20
+Maize,Haryana,33.1,74.6,30.2,53
+Cotton,Uttar Pradesh,39.3,65.5,69.4,29
+Cotton,Haryana,27.0,40.5,8.9,20
+Rice,Karnataka,37.8,34.5,28.6,12
+Sugarcane,Punjab,16.4,60.9,90.8,24
+Tomato,Karnataka,33.3,70.2,128.6,76
+Potato,Punjab,36.4,35.1,140.9,35
+Potato,Haryana,34.2,32.5,73.4,51
+Potato,Karnataka,34.2,84.5,47.8,90
+Potato,Haryana,29.4,43.8,112.2,46
+Maize,Haryana,38.9,35.6,59.4,33
+Wheat,Haryana,16.1,38.4,45.8,6
+Rice,Karnataka,36.9,53.4,63.8,32
+Cotton,Karnataka,28.2,77.6,124.9,83
+Tomato,Maharashtra,15.2,65.4,90.8,30
+Tomato,Karnataka,15.5,71.3,20.9,44
+Potato,Karnataka,29.2,74.5,148.2,76
+Tomato,Haryana,32.8,54.6,112.4,36
+Potato,Karnataka,19.9,39.2,116.1,26
+Rice,Karnataka,31.3,60.7,28.7,24
+Maize,Punjab,32.4,40.7,137.3,43
+Maize,Karnataka,22.9,71.4,91.0,64
+Rice,Maharashtra,23.3,54.9,72.7,21
+Maize,Uttar Pradesh,21.6,37.4,122.0,33
+Wheat,Uttar Pradesh,22.8,51.0,90.9,22
+Potato,Karnataka,20.9,40.9,59.1,30
+Wheat,Uttar Pradesh,17.2,35.3,143.9,25
+Rice,Karnataka,23.5,60.3,53.5,16
+Rice,Maharashtra,26.0,80.6,105.2,82
+Maize,Uttar Pradesh,33.7,30.6,99.2,53
+Maize,Uttar Pradesh,36.6,53.4,64.1,27
+Potato,Karnataka,26.0,59.0,2.1,28
+Cotton,Maharashtra,32.0,39.5,66.9,43
+Tomato,Punjab,22.3,82.8,117.1,45
+Maize,Karnataka,36.2,63.5,99.1,17
+Potato,Uttar Pradesh,39.2,76.4,32.7,31
+Maize,Haryana,20.2,77.1,88.0,51
+Cotton,Punjab,32.8,54.8,29.8,39
+Tomato,Karnataka,17.5,69.3,56.5,27
+Maize,Karnataka,26.5,42.1,113.1,49
+Tomato,Uttar Pradesh,16.7,84.6,106.0,48
+Potato,Maharashtra,34.0,52.3,118.7,49
+Potato,Punjab,37.9,48.4,43.7,1
+Cotton,Haryana,30.5,44.9,39.6,33
+Tomato,Haryana,33.4,80.1,104.4,74
+Rice,Karnataka,39.6,33.0,131.3,35
+Potato,Maharashtra,31.7,84.4,82.2,100
+Sugarcane,Maharashtra,31.6,80.9,32.0,68
+Rice,Maharashtra,17.5,35.0,145.3,33
+Wheat,Maharashtra,19.6,37.4,136.7,23
+Rice,Maharashtra,20.0,34.5,142.5,16
+Potato,Maharashtra,15.4,52.6,0.9,15
+Sugarcane,Maharashtra,29.4,31.6,89.2,35
+Maize,Haryana,16.4,34.9,23.5,0
+Potato,Uttar Pradesh,35.7,67.6,96.1,18
+Potato,Maharashtra,29.0,70.1,92.9,73
+Rice,Uttar Pradesh,25.3,60.2,56.2,41
+Rice,Haryana,26.4,77.6,80.6,79
+Rice,Uttar Pradesh,21.5,78.0,72.8,50
+Cotton,Haryana,25.1,81.7,92.7,79
+Sugarcane,Karnataka,37.6,58.2,33.4,14
+Wheat,Haryana,20.5,47.7,101.9,33
+Wheat,Karnataka,35.8,62.1,43.0,7
+Maize,Haryana,25.6,40.8,132.7,46
+Sugarcane,Punjab,39.5,55.0,95.6,15
+Sugarcane,Haryana,33.9,60.8,37.2,28
+Sugarcane,Uttar Pradesh,38.2,54.5,108.1,34
+Rice,Haryana,36.0,57.9,136.8,15
+Tomato,Uttar Pradesh,31.1,36.8,144.3,53
+Maize,Punjab,38.0,41.0,93.0,33
+Rice,Punjab,17.9,68.9,94.6,18
+Potato,Uttar Pradesh,25.7,60.1,60.3,41
+Maize,Karnataka,31.4,86.6,30.8,56
+Cotton,Punjab,31.1,47.8,17.1,36
+Cotton,Haryana,32.6,52.3,117.9,54
+Cotton,Punjab,29.3,46.8,115.1,41
+Potato,Karnataka,26.5,58.9,107.8,44
+Cotton,Haryana,32.2,51.6,64.6,39
+Sugarcane,Haryana,30.1,45.4,34.2,27
+Rice,Haryana,24.6,60.4,96.8,31
+Sugarcane,Haryana,35.8,84.7,85.6,52
+Tomato,Haryana,38.3,56.2,65.5,18
+Potato,Maharashtra,25.6,81.8,30.3,84
+Sugarcane,Karnataka,31.3,81.8,142.4,83
+Rice,Karnataka,33.0,43.0,102.9,45
+Tomato,Punjab,28.6,34.0,114.7,38
+Cotton,Karnataka,28.7,59.9,135.5,37
+Cotton,Karnataka,22.8,47.3,65.5,24
+Tomato,Maharashtra,20.6,43.7,36.2,11
+Rice,Uttar Pradesh,36.0,51.5,88.2,32
+Maize,Punjab,39.0,36.3,4.3,13
+Rice,Haryana,22.9,52.2,56.2,24
+Rice,Karnataka,34.5,62.8,92.5,35
+Rice,Punjab,28.3,53.4,133.6,35
+Maize,Karnataka,36.0,78.9,90.6,56
+Maize,Uttar Pradesh,29.7,48.0,44.0,30
+Rice,Uttar Pradesh,34.3,45.9,139.2,35
+Wheat,Karnataka,21.4,55.1,73.9,29
+Cotton,Punjab,15.9,56.1,142.5,33
+Wheat,Uttar Pradesh,16.9,84.7,52.4,61
+Tomato,Punjab,17.6,68.9,115.3,16
+Tomato,Uttar Pradesh,18.1,75.7,131.3,64
+Sugarcane,Maharashtra,19.8,62.5,44.2,17
+Cotton,Punjab,22.7,52.5,114.0,19
+Cotton,Uttar Pradesh,32.8,61.8,134.3,48
+Maize,Punjab,30.2,57.7,47.9,29
+Sugarcane,Maharashtra,28.2,76.4,54.3,65
+Sugarcane,Haryana,28.8,63.4,39.9,21
+Sugarcane,Uttar Pradesh,35.4,87.4,45.4,38
+Tomato,Punjab,22.8,79.1,95.0,64
+Cotton,Maharashtra,17.7,31.6,141.6,25
+Maize,Maharashtra,34.3,35.8,30.4,37
+Rice,Maharashtra,24.7,88.9,61.0,57
+Sugarcane,Maharashtra,30.9,61.3,57.8,45
+Cotton,Haryana,29.0,76.3,103.6,81
+Rice,Uttar Pradesh,31.4,36.0,114.5,35
+Wheat,Uttar Pradesh,39.4,53.7,138.8,26
+Rice,Uttar Pradesh,15.5,87.4,129.9,59
+Cotton,Uttar Pradesh,25.2,89.3,36.6,73
+Maize,Karnataka,39.3,36.0,12.4,10
+Maize,Karnataka,18.1,54.4,101.9,25
+Maize,Uttar Pradesh,35.5,58.2,38.7,16
+Maize,Punjab,27.1,33.4,54.6,49
+Maize,Karnataka,33.8,61.8,44.9,21
+Maize,Uttar Pradesh,39.2,46.5,137.3,32
+Cotton,Uttar Pradesh,28.8,69.9,66.2,59
+Sugarcane,Uttar Pradesh,34.4,84.9,69.6,75
+Potato,Karnataka,37.5,65.9,23.7,13
+Tomato,Uttar Pradesh,21.1,79.3,146.8,63
+Sugarcane,Punjab,33.7,35.2,57.0,41
+Sugarcane,Uttar Pradesh,24.2,66.0,2.4,10
+Sugarcane,Uttar Pradesh,20.2,77.2,104.3,60
+Sugarcane,Karnataka,38.1,85.8,93.3,45
+Sugarcane,Haryana,25.5,53.3,25.8,21
+Tomato,Karnataka,22.2,59.2,54.5,20
+Maize,Uttar Pradesh,31.3,75.4,52.7,81
+Maize,Punjab,21.3,35.9,36.5,5
+Rice,Karnataka,19.8,70.1,93.4,56
+Wheat,Uttar Pradesh,21.5,85.5,56.0,53
+Rice,Maharashtra,19.0,35.2,41.3,0
+Sugarcane,Karnataka,27.1,71.6,140.1,76
+Wheat,Punjab,17.5,35.7,106.6,22
+Cotton,Haryana,26.9,67.7,51.3,53
+Maize,Haryana,20.8,31.4,7.5,0
+Tomato,Punjab,31.5,58.7,120.9,42
+Cotton,Karnataka,36.1,84.3,71.5,74
+Sugarcane,Maharashtra,37.0,71.7,39.5,50
+Rice,Maharashtra,17.1,48.8,99.4,35
+Rice,Maharashtra,24.2,77.8,113.6,54
+Potato,Punjab,21.1,74.5,133.2,61
+Rice,Uttar Pradesh,29.6,64.8,77.3,47
+Tomato,Karnataka,16.3,36.5,123.2,17
+Tomato,Haryana,21.8,54.1,131.6,21
+Potato,Maharashtra,37.9,40.0,30.7,19
+Rice,Maharashtra,31.9,80.4,24.3,70
+Potato,Punjab,23.5,66.6,45.3,7
+Cotton,Maharashtra,36.2,58.5,147.5,31
+Sugarcane,Punjab,33.8,70.1,100.7,65
+Cotton,Haryana,28.7,66.8,30.4,50
+Sugarcane,Haryana,22.2,67.0,100.4,15
+Cotton,Haryana,15.3,84.0,32.8,47
+Rice,Uttar Pradesh,16.2,62.0,32.5,13
+Sugarcane,Uttar Pradesh,26.6,87.7,80.1,82
+Sugarcane,Punjab,36.7,33.2,148.5,20
+Maize,Punjab,38.3,66.9,147.4,31
+Cotton,Punjab,17.3,33.7,107.6,25
+Cotton,Uttar Pradesh,25.2,60.4,52.7,45
+Cotton,Uttar Pradesh,23.9,39.8,33.3,15
+Maize,Maharashtra,27.1,73.5,5.5,59
+Tomato,Punjab,25.5,62.5,59.7,51
+Maize,Punjab,18.7,76.7,87.8,65
+Tomato,Maharashtra,25.6,87.9,22.6,61
+Sugarcane,Uttar Pradesh,29.9,54.0,85.3,47
+Tomato,Maharashtra,30.4,86.3,81.3,76
+Wheat,Uttar Pradesh,30.6,63.4,19.2,26
+Sugarcane,Karnataka,35.4,80.7,7.2,34
+Cotton,Maharashtra,39.3,78.9,119.3,61
+Maize,Karnataka,24.7,56.5,47.3,11
+Maize,Maharashtra,22.6,71.9,144.6,57
+Tomato,Punjab,21.1,85.8,107.6,60
+Tomato,Karnataka,32.2,37.3,7.0,21
+Maize,Maharashtra,37.3,40.8,24.6,4
+Wheat,Punjab,38.1,52.5,44.7,10
+Cotton,Haryana,19.5,81.8,90.4,74
+Cotton,Uttar Pradesh,36.6,53.9,73.2,21
+Sugarcane,Haryana,38.6,68.1,2.1,13
+Tomato,Haryana,16.8,32.4,112.6,24
+Tomato,Punjab,17.0,84.3,76.6,51
+Cotton,Haryana,39.1,34.1,30.8,16
+Tomato,Punjab,34.7,51.0,67.7,42
+Wheat,Haryana,26.5,31.8,57.5,35
+Sugarcane,Haryana,16.1,48.4,147.5,22
+Rice,Maharashtra,25.5,89.6,42.7,54
+Wheat,Uttar Pradesh,24.0,64.4,141.8,23
+Cotton,Haryana,23.8,82.5,29.4,44
+Maize,Uttar Pradesh,29.2,81.0,143.0,70
+Maize,Punjab,38.6,85.5,102.8,53
+Sugarcane,Punjab,31.8,49.8,81.4,37
+Potato,Uttar Pradesh,22.3,86.3,69.0,74
+Sugarcane,Maharashtra,27.0,56.3,42.0,39
+Cotton,Uttar Pradesh,31.8,47.8,0.5,39
+Potato,Uttar Pradesh,28.6,33.6,22.5,35
+Potato,Karnataka,38.6,43.6,116.8,27
+Rice,Uttar Pradesh,19.6,33.9,38.3,15
+Tomato,Haryana,20.5,39.7,110.6,30
+Maize,Uttar Pradesh,35.1,78.3,33.8,31
+Wheat,Karnataka,34.0,38.1,120.4,52
+Tomato,Punjab,18.6,30.6,75.2,33
+Wheat,Karnataka,19.3,79.8,33.3,31
+Rice,Maharashtra,33.7,62.5,138.3,39
+Wheat,Haryana,24.3,35.4,129.0,22
+Rice,Uttar Pradesh,25.4,48.8,122.3,48
+Tomato,Punjab,19.3,31.4,29.4,3
+Wheat,Haryana,28.1,45.9,15.4,21
+Rice,Karnataka,16.1,34.7,17.9,12
+Sugarcane,Haryana,20.4,44.6,87.1,32
+Potato,Uttar Pradesh,37.0,66.3,93.0,18
+Potato,Punjab,16.0,77.7,135.7,63
+Maize,Haryana,20.1,85.0,62.1,62
+Potato,Haryana,26.3,89.8,38.6,70
+Sugarcane,Uttar Pradesh,35.0,55.9,57.2,19
+Rice,Karnataka,28.4,76.8,20.3,51
+Sugarcane,Punjab,17.5,60.5,103.1,19
+Potato,Maharashtra,23.0,80.7,6.4,56
+Rice,Haryana,31.3,89.6,50.6,66
+Potato,Uttar Pradesh,30.1,66.2,142.1,35
+Rice,Karnataka,38.1,32.9,29.4,6
+Wheat,Haryana,25.7,40.3,81.4,36
+Tomato,Karnataka,31.5,46.3,138.5,41
+Tomato,Karnataka,21.7,42.1,58.8,26
+Tomato,Punjab,37.8,80.8,83.7,61
+Sugarcane,Karnataka,22.2,38.1,0.8,16
+Cotton,Uttar Pradesh,28.0,51.7,17.7,21
+Cotton,Maharashtra,29.4,45.0,40.2,22
+Wheat,Karnataka,38.7,66.5,133.6,17
+Tomato,Uttar Pradesh,32.9,78.1,62.3,78
+Sugarcane,Haryana,27.4,70.9,113.1,67
+Tomato,Uttar Pradesh,39.4,82.6,18.4,47
+Maize,Haryana,17.8,72.6,22.2,47
+Tomato,Uttar Pradesh,33.7,61.7,148.7,37
+Potato,Karnataka,25.7,72.4,3.6,60
+Rice,Haryana,29.0,61.7,65.4,55
+Maize,Punjab,20.0,58.6,70.1,26
+Tomato,Maharashtra,17.2,74.8,117.2,65
+Wheat,Uttar Pradesh,26.2,39.5,136.9,39
+Tomato,Punjab,20.3,50.9,119.8,33
+Potato,Maharashtra,21.7,49.3,81.8,18
+Maize,Karnataka,32.6,48.5,47.7,24
+Maize,Karnataka,39.0,64.5,66.3,15
+Rice,Haryana,34.7,78.9,78.9,82
+Sugarcane,Uttar Pradesh,34.4,80.9,110.5,80
+Cotton,Uttar Pradesh,37.0,79.9,98.2,70
+Maize,Haryana,31.0,41.7,45.6,28
+Wheat,Karnataka,21.2,60.1,25.6,0
+Rice,Punjab,27.0,79.1,95.3,80
+Potato,Uttar Pradesh,25.9,79.9,61.1,84
+Sugarcane,Karnataka,19.5,44.8,20.2,13
+Tomato,Haryana,33.3,74.6,146.2,65
+Wheat,Haryana,39.5,75.5,23.6,40
+Tomato,Maharashtra,31.7,59.5,121.7,47
+Wheat,Haryana,22.4,65.5,27.1,13
+Maize,Uttar Pradesh,36.9,30.1,60.9,29
+Sugarcane,Karnataka,21.4,37.2,61.7,17
+Cotton,Punjab,37.7,37.4,95.5,17
+Potato,Haryana,25.9,42.3,7.2,23
+Sugarcane,Haryana,31.6,62.8,136.7,50
+Rice,Uttar Pradesh,18.6,75.7,120.5,51
+Cotton,Punjab,34.3,70.3,12.3,67
+Rice,Punjab,34.4,64.3,38.9,31
+Cotton,Karnataka,19.4,63.5,142.3,40
+Cotton,Haryana,31.5,85.7,55.1,81
+Maize,Maharashtra,38.5,63.1,117.6,27
+Wheat,Maharashtra,39.6,70.2,115.9,64
+Cotton,Karnataka,25.0,77.4,8.9,60
+Maize,Maharashtra,26.1,36.7,93.7,53
+Tomato,Punjab,20.3,59.1,133.0,31
+Rice,Punjab,22.7,33.2,51.6,23
+Sugarcane,Haryana,36.7,58.1,69.7,15
+Maize,Punjab,18.4,59.1,4.5,16
+Maize,Maharashtra,34.0,69.1,74.4,54
+Cotton,Punjab,17.7,56.7,71.8,19
+Rice,Karnataka,31.5,87.9,2.8,60
+Wheat,Maharashtra,16.0,86.4,72.4,55
+Maize,Maharashtra,29.9,30.8,54.1,42
+Wheat,Maharashtra,21.8,32.6,66.8,34
+Tomato,Karnataka,20.9,63.7,104.6,22
+Maize,Haryana,39.4,48.7,51.0,32
+Wheat,Haryana,34.1,44.4,140.0,42
+Potato,Maharashtra,31.5,49.7,25.6,31
+Rice,Punjab,30.3,55.7,138.8,39
+Wheat,Haryana,31.6,43.7,137.1,43
+Sugarcane,Haryana,33.3,68.7,23.9,28
+Wheat,Haryana,34.1,33.3,61.5,44
+Sugarcane,Karnataka,31.6,80.7,61.6,82
+Tomato,Uttar Pradesh,26.6,41.4,49.5,37
+Potato,Karnataka,24.8,59.5,3.6,18
+Wheat,Maharashtra,25.3,63.1,123.4,35
+Potato,Punjab,38.6,65.1,42.9,15
+Tomato,Uttar Pradesh,28.0,66.5,10.9,34
+Maize,Haryana,15.9,36.4,39.4,2
+Potato,Uttar Pradesh,38.4,36.1,25.9,19
+Sugarcane,Maharashtra,27.5,36.6,91.1,46
+Rice,Uttar Pradesh,28.2,48.0,82.2,46
+Wheat,Karnataka,36.1,68.2,14.1,18
+Cotton,Punjab,39.7,49.6,100.6,27
+Cotton,Uttar Pradesh,16.7,88.6,46.4,42
+Wheat,Maharashtra,30.9,46.1,43.2,39
+Rice,Karnataka,17.2,47.9,125.4,20
+Wheat,Punjab,15.7,33.6,145.9,16
+Maize,Haryana,23.4,87.0,84.9,65
+Rice,Uttar Pradesh,23.4,56.4,8.2,19
+Potato,Uttar Pradesh,21.7,53.9,143.0,29
+Maize,Haryana,16.4,59.9,3.5,0
+Rice,Karnataka,19.1,73.2,104.6,48
+Tomato,Karnataka,29.3,52.9,22.8,23
+Potato,Uttar Pradesh,32.3,60.6,102.5,51
+Cotton,Uttar Pradesh,28.4,76.6,60.4,89
+Wheat,Uttar Pradesh,23.9,50.7,147.9,27
+Maize,Maharashtra,24.8,55.3,130.2,31
+Tomato,Maharashtra,39.4,73.7,115.0,46
+Maize,Punjab,37.4,66.7,109.5,32
+Sugarcane,Karnataka,30.8,61.6,82.0,37
+Maize,Punjab,39.4,30.2,52.8,31
+Tomato,Uttar Pradesh,26.3,43.8,76.9,45
+Sugarcane,Karnataka,17.5,53.5,50.2,30
+Cotton,Maharashtra,24.5,73.7,12.7,59
+Cotton,Uttar Pradesh,26.2,77.4,130.9,86
+Maize,Karnataka,17.7,83.2,23.6,34
+Tomato,Haryana,27.4,89.2,36.8,69
+Rice,Haryana,33.5,43.6,76.1,47
+Cotton,Punjab,31.5,76.0,111.0,91
+Cotton,Haryana,15.5,46.3,10.5,15
+Potato,Maharashtra,15.3,55.3,13.8,9
+Potato,Karnataka,17.3,75.6,13.0,35
+Sugarcane,Uttar Pradesh,26.5,37.5,141.0,49
+Tomato,Maharashtra,37.2,67.8,60.8,25
+Potato,Punjab,21.3,85.6,31.3,59
+Potato,Karnataka,39.8,32.9,121.2,31
+Rice,Haryana,36.3,78.8,86.4,45
+Sugarcane,Punjab,22.6,85.4,41.1,46
+Tomato,Punjab,15.6,52.2,15.4,4
+Rice,Haryana,34.4,43.1,83.5,45
+Tomato,Punjab,37.3,82.0,143.7,65
+Potato,Haryana,39.6,36.5,131.8,19
+Tomato,Maharashtra,22.9,70.5,59.8,62
+Cotton,Maharashtra,21.4,65.2,6.8,28
+Rice,Punjab,26.9,85.1,42.4,53
+Sugarcane,Uttar Pradesh,29.0,45.4,16.3,38
+Tomato,Haryana,15.6,49.7,112.3,24
+Rice,Uttar Pradesh,15.6,32.8,77.1,18
+Rice,Punjab,16.3,86.8,10.4,40
+Potato,Karnataka,26.8,80.8,7.8,78
+Sugarcane,Uttar Pradesh,32.2,49.8,5.1,21
+Wheat,Uttar Pradesh,26.6,60.8,3.7,22
+Wheat,Uttar Pradesh,18.0,30.4,54.2,15
+Sugarcane,Punjab,24.1,45.7,24.4,7
+Potato,Haryana,15.9,48.0,79.5,25
+Tomato,Uttar Pradesh,20.4,63.2,78.9,26
+Cotton,Punjab,18.7,86.2,27.5,57
+Maize,Punjab,23.8,51.2,80.7,27
+Wheat,Haryana,21.1,46.6,27.3,2
+Potato,Karnataka,32.5,43.5,104.7,51
+Tomato,Uttar Pradesh,34.8,38.7,14.0,25
+Maize,Punjab,24.6,79.7,59.2,46
+Sugarcane,Maharashtra,27.3,68.3,42.8,21
+Potato,Punjab,37.6,57.5,14.1,8
+Sugarcane,Maharashtra,32.0,74.4,55.9,70
+Potato,Punjab,34.3,66.5,135.0,49
+Tomato,Haryana,19.8,64.4,97.1,34
+Maize,Karnataka,33.7,87.8,26.2,69
+Tomato,Haryana,17.8,75.7,148.2,45
+Wheat,Haryana,22.2,75.9,42.3,44
+Maize,Uttar Pradesh,15.7,58.7,69.6,29
+Maize,Punjab,25.1,84.9,0.2,61
+Tomato,Haryana,37.9,44.7,71.4,16
+Rice,Punjab,20.6,68.9,3.8,18
+Potato,Maharashtra,17.1,53.8,131.0,18
+Maize,Uttar Pradesh,36.9,54.0,20.0,4
+Sugarcane,Karnataka,34.9,57.9,141.7,36
+Rice,Uttar Pradesh,31.2,84.0,12.8,52
+Wheat,Haryana,36.7,37.4,130.6,16
+Wheat,Haryana,33.2,80.9,52.9,81
+Wheat,Haryana,29.9,82.1,68.8,76
+Cotton,Haryana,34.7,58.4,22.3,20
+Cotton,Uttar Pradesh,19.6,65.9,24.9,27
+Tomato,Punjab,38.9,41.4,40.0,20
+Maize,Haryana,18.5,86.1,78.9,46
+Potato,Uttar Pradesh,17.3,60.3,44.3,16
+Potato,Uttar Pradesh,27.1,38.4,146.1,55
+Sugarcane,Uttar Pradesh,19.7,61.2,145.9,33
+Rice,Haryana,21.1,63.9,86.0,28
+Rice,Haryana,29.2,40.1,99.2,50
+Cotton,Punjab,23.0,70.7,68.0,64
+Tomato,Uttar Pradesh,38.3,46.0,75.8,35
+Cotton,Karnataka,16.1,48.7,62.9,28
+Maize,Punjab,22.9,56.4,20.8,12
+Potato,Uttar Pradesh,34.4,76.4,28.0,58
+Cotton,Punjab,31.6,69.1,144.3,52
+Tomato,Maharashtra,39.5,55.3,94.3,20
+Sugarcane,Karnataka,37.8,48.9,19.6,6
+Cotton,Punjab,24.5,34.1,94.6,19
+Tomato,Haryana,32.0,60.6,64.0,54
+Tomato,Haryana,35.7,82.3,148.9,64
+Tomato,Uttar Pradesh,22.9,53.2,79.2,28
+Cotton,Haryana,23.5,80.0,141.0,69
+Cotton,Haryana,25.1,36.1,39.0,25
+Sugarcane,Maharashtra,24.0,37.5,17.4,11
+Tomato,Haryana,23.0,41.0,33.2,0
+Rice,Haryana,32.3,74.0,46.4,60
+Sugarcane,Haryana,16.2,37.7,79.6,35
+Maize,Maharashtra,27.4,35.1,145.1,48
+Potato,Karnataka,38.6,76.6,7.4,49
+Rice,Uttar Pradesh,31.8,66.2,96.3,43
+Tomato,Uttar Pradesh,18.8,71.0,81.5,49
+Cotton,Haryana,28.9,86.4,56.8,82
+Maize,Maharashtra,35.8,61.7,9.7,5
+Rice,Maharashtra,31.8,57.3,103.1,54
+Rice,Haryana,25.0,86.4,89.5,55
+Potato,Uttar Pradesh,27.3,38.8,85.3,49
+Rice,Haryana,23.9,41.1,106.8,28
+Potato,Karnataka,18.1,45.2,123.1,32
+Wheat,Haryana,28.0,59.0,103.5,42
+Tomato,Uttar Pradesh,36.5,79.3,20.6,48
+Tomato,Maharashtra,28.4,56.8,87.3,37
+Rice,Karnataka,26.1,82.2,126.5,84
+Maize,Uttar Pradesh,25.4,41.8,79.9,49
+Wheat,Uttar Pradesh,39.0,61.4,5.7,17
+Wheat,Maharashtra,19.4,45.4,45.4,1
+Cotton,Maharashtra,16.0,79.3,64.4,61
+Sugarcane,Haryana,19.7,48.4,146.2,29
+Tomato,Maharashtra,34.1,35.3,102.3,39
+Tomato,Karnataka,27.2,46.7,84.8,52
+Potato,Punjab,33.7,74.2,140.0,71
+Tomato,Maharashtra,19.6,85.4,51.2,58
+Maize,Karnataka,24.3,66.1,62.4,20
+Maize,Uttar Pradesh,20.9,63.0,115.8,25
+Potato,Punjab,17.8,36.9,24.5,6
+Sugarcane,Haryana,19.8,43.6,53.9,30
+Wheat,Haryana,15.5,64.5,2.8,7
+Rice,Haryana,26.3,88.0,144.2,78
+Wheat,Maharashtra,26.7,54.1,53.0,45
+Cotton,Punjab,33.9,55.3,2.1,33
+Sugarcane,Uttar Pradesh,36.1,57.7,45.5,4
+Maize,Punjab,23.9,84.6,47.0,45
+Potato,Maharashtra,26.9,87.7,87.5,100
+Cotton,Maharashtra,17.1,69.4,50.2,41
+Sugarcane,Maharashtra,34.9,41.6,139.9,41
+Rice,Maharashtra,19.3,75.3,43.4,37
+Wheat,Haryana,28.1,62.2,76.8,55
+Maize,Haryana,15.5,72.8,109.3,50
+Wheat,Maharashtra,37.4,48.1,71.0,34
+Maize,Uttar Pradesh,29.0,50.0,135.1,47
+Tomato,Haryana,19.8,82.4,54.1,63
+Maize,Punjab,28.5,32.3,61.0,49
+Tomato,Uttar Pradesh,26.2,88.7,100.2,79
+Tomato,Haryana,28.4,31.5,138.4,41
+Wheat,Karnataka,19.8,74.2,123.2,60
+Cotton,Karnataka,36.1,70.0,35.0,11
+Potato,Uttar Pradesh,39.6,52.5,62.1,21
+Wheat,Karnataka,17.5,33.0,100.1,23
+Cotton,Maharashtra,38.1,88.3,107.4,64
+Rice,Maharashtra,19.6,30.2,25.7,18
+Rice,Punjab,21.5,69.9,79.1,24
+Maize,Maharashtra,30.3,62.5,45.4,24
+Maize,Punjab,31.5,41.3,146.3,55
+Cotton,Haryana,24.8,32.5,64.0,32
+Cotton,Punjab,25.5,83.0,104.4,80
+Cotton,Maharashtra,15.9,74.6,20.0,47
+Wheat,Maharashtra,31.6,42.9,41.9,24
+Rice,Maharashtra,35.2,69.6,107.8,30
+Tomato,Maharashtra,18.4,41.2,11.4,16
+Cotton,Punjab,19.8,34.1,141.7,23
+Potato,Uttar Pradesh,22.4,83.5,18.3,67
+Potato,Karnataka,38.6,43.1,86.5,34
+Cotton,Karnataka,27.1,70.5,21.2,76
+Maize,Uttar Pradesh,25.3,36.4,66.3,36
+Cotton,Uttar Pradesh,19.1,46.1,44.1,1
+Cotton,Punjab,38.6,56.0,107.4,18
+Rice,Karnataka,24.4,64.7,118.1,33
+Sugarcane,Karnataka,15.4,73.5,7.7,49
+Rice,Karnataka,31.4,88.5,5.2,66
+Rice,Uttar Pradesh,22.7,41.3,132.1,25
+Sugarcane,Maharashtra,22.4,79.2,3.5,45
+Rice,Karnataka,27.9,38.0,29.7,21
+Tomato,Maharashtra,26.7,32.8,26.0,32
+Sugarcane,Punjab,37.4,46.0,60.4,27
+Rice,Punjab,27.7,70.9,13.0,67
+Potato,Punjab,18.5,39.9,20.3,9
+Wheat,Karnataka,33.7,83.3,53.4,71
+Tomato,Karnataka,31.2,41.4,92.9,40
+Wheat,Maharashtra,35.8,45.9,105.7,17
+Cotton,Haryana,38.7,41.0,10.8,12
+Tomato,Karnataka,28.4,90.0,68.0,77
+Wheat,Punjab,35.6,58.5,82.4,26
+Tomato,Punjab,35.7,51.0,112.2,24
+Maize,Haryana,30.2,43.7,32.5,37
+Potato,Uttar Pradesh,20.2,83.5,63.2,80
+Rice,Punjab,39.3,72.4,26.7,50
+Cotton,Karnataka,19.5,31.9,95.8,23
+Sugarcane,Karnataka,18.8,61.2,145.9,30
+Potato,Uttar Pradesh,28.2,79.7,19.5,51
+Rice,Maharashtra,28.9,43.2,5.1,31
+Sugarcane,Maharashtra,17.2,53.9,114.9,26
+Maize,Punjab,16.7,51.9,65.8,19
+Sugarcane,Haryana,16.1,53.9,149.6,24
+Sugarcane,Maharashtra,37.5,49.0,109.0,32
+Potato,Uttar Pradesh,29.9,63.9,53.2,37
+Maize,Uttar Pradesh,23.5,46.9,116.8,20
+Cotton,Punjab,36.9,83.6,112.0,66
+Potato,Uttar Pradesh,21.7,63.6,56.8,35
+Tomato,Maharashtra,39.2,53.8,107.7,26
+Maize,Haryana,30.8,69.4,134.5,43
+Cotton,Uttar Pradesh,38.5,82.4,117.9,74
+Cotton,Haryana,26.4,30.8,10.5,29
+Maize,Maharashtra,38.2,57.4,148.0,22
+Maize,Maharashtra,33.7,57.7,64.8,44
+Cotton,Punjab,32.3,39.0,8.1,38
+Potato,Uttar Pradesh,34.6,30.3,104.0,50
+Rice,Haryana,17.6,57.6,99.6,28
+Maize,Uttar Pradesh,19.9,32.7,38.9,12
+Tomato,Karnataka,21.6,40.8,137.1,34
+Rice,Haryana,34.9,56.8,104.6,41
+Potato,Uttar Pradesh,23.6,32.8,88.8,21
+Maize,Karnataka,24.8,85.6,108.7,52
+Potato,Haryana,39.2,40.3,146.9,15
+Potato,Punjab,18.4,64.3,15.9,17
+Cotton,Karnataka,33.3,50.2,97.9,49
+Cotton,Punjab,21.8,55.5,66.5,26
+Potato,Maharashtra,37.2,49.5,16.4,14
+Sugarcane,Uttar Pradesh,30.7,31.9,75.5,43
+Potato,Uttar Pradesh,29.1,50.9,68.2,35
+Potato,Karnataka,28.3,60.6,125.9,40
+Cotton,Punjab,33.3,86.8,97.7,76
+Maize,Punjab,17.6,79.6,20.6,42
+Maize,Karnataka,16.3,66.9,49.5,11
+Cotton,Uttar Pradesh,29.4,47.2,61.0,51
+Cotton,Maharashtra,31.1,55.3,99.5,43
+Cotton,Punjab,38.6,89.0,99.0,65
+Potato,Haryana,33.9,47.2,61.3,36
+Potato,Maharashtra,23.5,59.7,127.8,30
+Sugarcane,Punjab,16.1,53.6,33.3,11
+Cotton,Haryana,22.8,38.1,78.0,26
+Rice,Karnataka,21.9,78.6,111.9,50
+Potato,Karnataka,16.8,80.5,119.8,84
+Sugarcane,Punjab,15.8,37.0,8.1,17
+Wheat,Haryana,29.1,66.7,116.1,41
+Tomato,Karnataka,25.2,89.6,117.2,78
+Tomato,Maharashtra,35.4,41.0,67.0,35
+Sugarcane,Maharashtra,23.8,75.9,55.4,64
+Maize,Haryana,35.7,75.4,29.9,48
+Cotton,Maharashtra,27.9,39.5,82.8,36
+Rice,Punjab,20.6,86.6,148.3,47
+Sugarcane,Karnataka,21.0,39.8,24.1,0
+Cotton,Uttar Pradesh,17.6,59.2,59.0,28
+Maize,Maharashtra,32.2,57.3,96.5,40
+Wheat,Maharashtra,19.9,67.1,96.5,32
+Sugarcane,Punjab,24.2,63.2,11.3,7
+Sugarcane,Uttar Pradesh,31.1,56.2,110.9,37
+Tomato,Karnataka,18.8,40.1,116.3,15
+Tomato,Punjab,36.8,89.1,126.9,50
+Maize,Karnataka,25.5,56.7,43.4,29
+Maize,Karnataka,28.5,36.6,30.9,24
+Wheat,Punjab,38.3,43.8,132.3,15
+Potato,Punjab,21.4,32.5,24.9,6
+Potato,Haryana,38.6,76.4,124.5,56
+Wheat,Haryana,30.0,36.7,61.1,40
+Tomato,Punjab,21.3,76.9,43.4,38
+Tomato,Haryana,20.6,57.8,36.3,12
+Maize,Punjab,18.0,55.2,71.1,26
+Rice,Karnataka,26.6,66.6,32.1,21
+Rice,Uttar Pradesh,35.3,74.5,9.0,42
+Sugarcane,Maharashtra,28.8,74.7,72.5,79
+Rice,Haryana,29.6,69.7,92.7,46
+Rice,Haryana,24.1,31.1,40.1,10
+Cotton,Maharashtra,36.3,81.2,105.6,68
+Wheat,Karnataka,27.1,44.9,113.4,53
+Maize,Punjab,34.3,31.4,39.7,25
+Maize,Uttar Pradesh,22.1,80.7,1.1,34
+Rice,Uttar Pradesh,29.6,71.6,95.6,81
+Tomato,Maharashtra,35.1,55.6,58.6,17
+Tomato,Maharashtra,16.8,78.6,49.1,32
+Rice,Punjab,37.8,57.2,142.7,31
+Tomato,Haryana,39.9,53.5,146.5,28
+Wheat,Karnataka,22.9,31.1,102.9,32
+Maize,Karnataka,32.5,37.6,63.9,47
+Sugarcane,Haryana,15.5,35.4,54.4,17
+Tomato,Uttar Pradesh,20.9,35.9,95.8,26
+Potato,Punjab,30.2,68.0,16.9,31
+Rice,Uttar Pradesh,25.9,61.7,102.7,46
+Cotton,Karnataka,23.5,60.7,9.4,28
+Maize,Punjab,23.5,66.1,5.0,16
+Rice,Punjab,25.2,41.8,84.6,54
+Rice,Karnataka,35.0,87.3,83.0,65
+Tomato,Maharashtra,24.1,36.4,145.2,24
+Potato,Maharashtra,37.9,63.6,138.8,32
+Maize,Karnataka,24.0,45.3,32.8,9
+Sugarcane,Haryana,17.4,61.4,45.4,3
+Cotton,Karnataka,17.3,83.5,45.4,47
+Tomato,Haryana,15.4,63.5,20.0,18
+Maize,Haryana,27.6,69.9,61.9,38
+Tomato,Haryana,16.3,79.0,117.5,53
+Sugarcane,Karnataka,27.5,68.9,126.9,44
+Wheat,Punjab,31.6,61.7,50.5,54
+Tomato,Karnataka,34.7,45.8,135.1,53
+Sugarcane,Karnataka,39.0,70.3,86.7,62
+Rice,Punjab,29.0,80.8,129.6,69
+Maize,Maharashtra,25.3,33.3,26.9,31
+Potato,Punjab,32.3,88.1,103.4,87
+Potato,Punjab,19.0,71.1,62.7,46
+Maize,Karnataka,21.1,59.3,97.8,26
+Maize,Punjab,29.9,64.7,83.0,35
+Potato,Haryana,27.9,78.1,52.7,72
+Potato,Maharashtra,23.2,49.3,13.0,17
+Sugarcane,Karnataka,27.8,63.0,104.3,36
+Wheat,Maharashtra,18.7,89.2,141.9,57
+Wheat,Karnataka,18.3,33.5,140.1,34
+Rice,Uttar Pradesh,32.6,57.9,130.1,55
+Sugarcane,Maharashtra,36.9,73.3,35.8,41
+Maize,Maharashtra,16.7,68.6,23.9,13
+Sugarcane,Uttar Pradesh,22.5,56.4,107.1,27
+Wheat,Maharashtra,38.0,81.4,63.6,47
+Cotton,Uttar Pradesh,27.3,87.2,123.1,77
+Cotton,Karnataka,30.0,43.6,98.3,51
+Wheat,Maharashtra,32.8,62.4,66.2,48
+Tomato,Punjab,31.0,49.1,124.2,46
+Potato,Uttar Pradesh,18.9,48.7,132.6,30
+Maize,Uttar Pradesh,31.3,47.7,99.9,52
+Maize,Punjab,17.5,31.8,133.2,21
+Maize,Uttar Pradesh,25.6,37.9,126.5,38
+Potato,Punjab,29.3,79.5,11.8,55
+Maize,Punjab,21.0,86.2,78.8,62
+Wheat,Maharashtra,22.0,57.1,90.1,24
+Rice,Haryana,33.7,59.3,62.3,47
+Sugarcane,Karnataka,36.7,51.9,10.6,16
+Wheat,Maharashtra,27.2,66.9,124.1,40
+Cotton,Haryana,29.4,67.3,80.3,57
+Wheat,Maharashtra,39.3,82.1,93.6,48
+Tomato,Maharashtra,26.6,46.6,132.6,55
+Potato,Karnataka,24.5,50.6,100.9,32
+Wheat,Maharashtra,34.8,40.4,27.0,27
+Maize,Punjab,37.5,35.9,146.3,31
+Rice,Punjab,30.2,75.6,23.2,59
+Maize,Karnataka,32.3,63.2,28.3,32
+Potato,Uttar Pradesh,24.2,59.1,122.7,33
+Wheat,Karnataka,37.1,70.9,13.4,30
+Rice,Punjab,27.4,71.9,1.0,53
+Sugarcane,Uttar Pradesh,15.3,36.2,70.9,32
+Potato,Karnataka,17.7,82.7,70.2,71
+Maize,Uttar Pradesh,29.6,64.6,59.9,52
+Rice,Haryana,31.8,73.7,148.1,67
+Maize,Uttar Pradesh,37.1,75.4,99.6,49
+Wheat,Maharashtra,37.7,45.9,92.3,24
+Cotton,Punjab,36.0,57.4,102.5,35
+Sugarcane,Karnataka,29.8,64.8,14.5,21
+Maize,Haryana,38.0,87.8,9.1,50
+Wheat,Haryana,32.2,59.2,27.6,30
+Cotton,Uttar Pradesh,23.1,84.1,2.1,44
+Sugarcane,Karnataka,19.6,50.6,107.2,19
+Cotton,Punjab,28.6,70.5,64.0,94
+Wheat,Haryana,39.4,75.5,114.9,49
+Sugarcane,Maharashtra,22.1,58.5,14.3,16
+Tomato,Maharashtra,32.4,81.6,105.7,83
+Maize,Maharashtra,28.7,51.3,59.9,51
+Cotton,Haryana,15.6,81.2,75.3,58
+Maize,Maharashtra,32.4,43.8,74.5,41
+Wheat,Uttar Pradesh,31.5,89.1,5.1,56
+Cotton,Maharashtra,31.5,30.8,34.2,24
+Potato,Uttar Pradesh,24.3,48.7,85.4,29
+Wheat,Uttar Pradesh,32.9,50.8,63.4,45
+Rice,Punjab,31.1,88.2,141.6,78
+Maize,Haryana,36.8,65.6,64.1,26
+Cotton,Uttar Pradesh,30.4,65.3,40.9,45
+Tomato,Uttar Pradesh,24.5,79.4,52.3,63
+Sugarcane,Haryana,33.3,57.3,55.7,45
+Tomato,Uttar Pradesh,27.6,50.7,97.3,39
+Cotton,Haryana,37.2,73.8,129.2,75
+Wheat,Karnataka,17.0,55.5,107.8,32
+Maize,Uttar Pradesh,33.2,41.6,83.7,41
+Sugarcane,Karnataka,22.8,41.3,53.5,35
+Rice,Haryana,23.6,89.2,137.1,59
+Potato,Punjab,31.7,59.8,26.3,23
+Rice,Maharashtra,21.3,42.6,72.6,27
+Tomato,Karnataka,23.3,35.9,146.7,25
+Wheat,Punjab,35.4,71.8,135.5,53
+Cotton,Maharashtra,21.6,85.6,43.6,54
+Sugarcane,Punjab,20.5,31.0,104.5,34
+Cotton,Uttar Pradesh,15.9,61.8,114.4,33
+Potato,Karnataka,36.3,62.2,65.8,33
+Rice,Karnataka,24.5,44.0,29.9,3
+Wheat,Maharashtra,26.4,48.5,118.0,42
+Rice,Maharashtra,33.1,65.1,108.6,52
+Potato,Punjab,22.6,30.9,138.2,20
+Cotton,Uttar Pradesh,15.4,84.5,127.5,55
+Sugarcane,Uttar Pradesh,16.6,49.5,55.8,16
+Cotton,Karnataka,28.8,60.6,49.8,41
+Potato,Karnataka,24.8,56.7,66.8,34
+Tomato,Uttar Pradesh,25.1,80.5,130.4,79
+Maize,Karnataka,36.1,56.4,98.1,23
+Potato,Uttar Pradesh,24.8,47.1,27.8,13
+Potato,Uttar Pradesh,23.0,59.7,140.3,24
+Sugarcane,Uttar Pradesh,32.0,55.8,130.4,45
+Potato,Maharashtra,36.0,89.9,36.0,64
+Wheat,Karnataka,30.4,40.9,48.9,25
+Wheat,Punjab,36.9,83.9,44.9,37
+Potato,Uttar Pradesh,16.4,87.4,40.8,61
+Wheat,Karnataka,22.1,88.7,78.8,46
+Wheat,Punjab,28.3,63.7,128.5,38
+Sugarcane,Haryana,36.4,71.8,40.1,36
+Cotton,Karnataka,37.3,70.1,86.0,65
+Sugarcane,Haryana,32.5,33.8,134.4,36
+Cotton,Karnataka,17.3,39.7,45.6,0
+Wheat,Punjab,24.8,76.1,42.7,33
+Potato,Karnataka,39.3,33.7,18.6,1
+Wheat,Karnataka,35.5,45.1,56.9,26
+Cotton,Punjab,37.2,76.0,139.0,56
+Rice,Karnataka,29.6,72.3,1.2,70
+Sugarcane,Karnataka,39.6,44.9,16.6,14
+Potato,Karnataka,31.4,39.6,37.4,23
+Tomato,Karnataka,38.2,68.7,9.8,18
+Cotton,Uttar Pradesh,24.4,77.0,29.5,60
+Sugarcane,Haryana,29.4,72.7,104.6,73
+Tomato,Punjab,24.8,88.0,34.2,48
+Potato,Uttar Pradesh,34.0,88.4,85.8,93
+Maize,Maharashtra,20.8,68.7,78.0,16
+Rice,Punjab,15.7,35.7,69.7,16
+Sugarcane,Haryana,16.3,42.2,113.0,22
+Rice,Uttar Pradesh,27.7,49.8,64.7,48
+Potato,Maharashtra,34.9,32.7,14.2,32
+Rice,Karnataka,37.5,54.9,143.6,20
+Rice,Haryana,22.5,72.6,139.5,48
+Wheat,Karnataka,32.6,65.7,107.1,41
+Rice,Uttar Pradesh,32.7,62.1,18.1,22
+Wheat,Karnataka,27.0,70.8,15.0,55
+Tomato,Karnataka,34.0,47.5,97.6,43
+Sugarcane,Haryana,20.9,81.5,82.6,59
+Cotton,Haryana,22.6,39.1,55.0,34
+Maize,Haryana,19.0,85.5,12.4,43
+Sugarcane,Haryana,38.0,43.3,133.5,29
+Sugarcane,Maharashtra,38.1,72.3,82.8,65
+Rice,Punjab,19.0,85.2,85.1,53
+Potato,Maharashtra,35.1,49.8,53.7,27
+Wheat,Uttar Pradesh,35.8,88.5,120.1,50
+Maize,Punjab,38.8,71.8,12.3,45
+Cotton,Haryana,20.5,62.2,73.7,37
+Sugarcane,Uttar Pradesh,36.2,85.0,74.3,58
+Rice,Karnataka,17.4,63.9,147.6,17
+Rice,Haryana,25.6,61.3,19.9,28
+Wheat,Karnataka,36.7,59.4,31.3,2
+Sugarcane,Maharashtra,36.6,59.4,119.1,31
+Rice,Maharashtra,28.9,58.3,78.3,44
+Rice,Punjab,31.9,67.0,27.0,39
+Cotton,Maharashtra,27.8,54.7,51.3,35
+Wheat,Uttar Pradesh,31.3,50.1,105.6,51
+Rice,Uttar Pradesh,31.9,54.7,74.5,44
+Tomato,Maharashtra,18.0,47.7,45.1,8
+Cotton,Uttar Pradesh,30.9,65.7,88.7,63
+Tomato,Maharashtra,38.6,78.2,59.3,53
+Tomato,Haryana,32.9,48.4,47.1,35
+Wheat,Maharashtra,36.8,57.5,74.9,28
+Cotton,Punjab,32.0,58.0,24.4,24
+Cotton,Karnataka,37.4,39.1,42.5,8
+Wheat,Maharashtra,18.3,53.5,105.1,32
+Tomato,Maharashtra,23.9,56.7,107.2,22
+Sugarcane,Maharashtra,26.8,74.5,20.5,55
+Cotton,Haryana,20.1,85.5,145.7,56
+Sugarcane,Punjab,32.1,30.5,24.7,24
+Cotton,Uttar Pradesh,36.8,54.0,135.9,35
+Sugarcane,Uttar Pradesh,21.6,32.2,76.2,34
+Cotton,Maharashtra,19.6,35.3,18.5,5
+Sugarcane,Punjab,36.1,86.6,122.0,55
+Cotton,Uttar Pradesh,37.3,32.2,127.6,29
+Potato,Haryana,38.6,34.6,96.5,25
+Rice,Haryana,34.5,56.4,44.2,27
+Tomato,Punjab,19.8,40.1,144.2,25
+Cotton,Karnataka,31.2,39.6,56.8,48
+Tomato,Punjab,37.6,48.2,33.6,8
+Cotton,Haryana,29.7,61.0,109.6,59
+Cotton,Punjab,15.3,48.0,86.1,35
+Maize,Haryana,23.9,45.6,143.3,33
+Maize,Uttar Pradesh,20.5,78.6,78.4,49
+Cotton,Uttar Pradesh,39.8,69.2,62.8,27
+Potato,Uttar Pradesh,20.4,88.2,53.3,67
+Potato,Punjab,28.6,80.6,136.3,95
+Cotton,Punjab,25.2,55.7,12.1,32
+Potato,Maharashtra,27.8,39.8,90.1,51
+Rice,Haryana,28.0,35.1,61.5,52
+Potato,Haryana,21.5,39.8,127.5,23
+Maize,Punjab,30.7,68.3,68.6,50
+Rice,Maharashtra,15.2,58.5,29.5,0
+Tomato,Karnataka,38.8,38.9,108.7,31
+Maize,Haryana,38.7,76.5,129.8,45
+Wheat,Karnataka,37.6,76.2,30.0,44
+Sugarcane,Punjab,15.5,85.1,2.4,30
+Wheat,Uttar Pradesh,35.7,33.0,56.8,22
+Rice,Karnataka,22.2,34.4,53.0,20
+Potato,Punjab,38.9,79.8,14.7,31
+Potato,Uttar Pradesh,38.7,83.1,115.4,68
+Rice,Haryana,17.9,60.9,93.6,25
+Cotton,Uttar Pradesh,35.0,45.2,22.5,4
+Wheat,Maharashtra,22.3,72.1,137.9,65
+Cotton,Haryana,19.4,47.3,110.3,19
+Wheat,Uttar Pradesh,26.0,49.1,47.1,25
+Maize,Haryana,19.9,47.7,15.5,19
+Tomato,Uttar Pradesh,28.2,32.8,96.7,47
+Wheat,Karnataka,34.8,49.1,65.9,46
+Cotton,Maharashtra,37.8,52.5,48.3,1
+Maize,Uttar Pradesh,36.5,62.9,98.2,20
+Potato,Uttar Pradesh,18.2,48.2,140.8,16
+Tomato,Uttar Pradesh,34.1,52.3,21.4,23
+Sugarcane,Haryana,34.6,33.7,42.4,39
+Sugarcane,Uttar Pradesh,16.5,85.6,86.3,49
+Tomato,Maharashtra,18.6,30.3,80.8,31
+Wheat,Maharashtra,35.6,72.7,75.4,59
+Tomato,Karnataka,17.1,80.6,120.4,65
+Rice,Maharashtra,15.8,48.8,43.6,20
+Sugarcane,Karnataka,16.1,51.6,115.2,33
+Potato,Haryana,26.5,70.9,85.8,77
+Cotton,Maharashtra,18.5,32.1,55.9,18
+Rice,Maharashtra,15.5,42.5,117.5,24
+Wheat,Haryana,30.1,84.7,67.1,68
+Tomato,Maharashtra,26.6,65.7,95.3,54
+Cotton,Haryana,39.6,58.8,99.4,31
+Sugarcane,Maharashtra,26.7,71.5,84.3,80
+Cotton,Punjab,27.5,78.1,136.3,83
+Maize,Maharashtra,37.4,69.6,116.4,24
+Sugarcane,Karnataka,38.4,57.6,64.5,34
+Potato,Karnataka,29.5,52.2,87.3,36
+Potato,Karnataka,31.3,56.2,116.7,39
+Wheat,Punjab,17.3,32.0,29.8,19
+Potato,Punjab,18.0,66.8,144.4,27
+Sugarcane,Haryana,18.7,57.7,133.7,16
+Tomato,Karnataka,26.1,76.0,99.9,65
+Cotton,Uttar Pradesh,38.0,49.4,148.4,21
+Tomato,Punjab,24.1,69.2,78.6,35
+Tomato,Karnataka,38.0,66.7,122.7,30
+Cotton,Punjab,23.9,59.2,146.8,15
+Sugarcane,Karnataka,15.6,78.5,36.8,31
+Tomato,Uttar Pradesh,36.9,72.2,61.1,45
+Potato,Maharashtra,38.8,72.1,108.2,65
+Potato,Punjab,36.7,34.4,47.4,5
+Potato,Haryana,30.3,71.0,85.8,68
+Wheat,Maharashtra,27.6,73.5,63.9,70
+Tomato,Haryana,38.0,31.1,66.2,23
+Cotton,Uttar Pradesh,30.0,55.4,62.5,53
+Potato,Karnataka,21.8,74.9,50.3,56
+Maize,Punjab,17.9,61.6,92.6,18
+Wheat,Punjab,32.1,33.4,123.0,53
+Rice,Maharashtra,31.5,84.2,13.7,54
+Sugarcane,Punjab,25.6,81.8,41.4,59
+Rice,Haryana,34.7,78.7,50.8,68
+Sugarcane,Uttar Pradesh,26.0,73.5,146.8,71
+Sugarcane,Uttar Pradesh,39.5,37.4,43.8,10
+Maize,Haryana,34.5,80.2,52.8,73
+Wheat,Karnataka,29.5,69.7,86.2,44
+Wheat,Uttar Pradesh,39.7,79.4,29.4,49
+Tomato,Uttar Pradesh,30.3,41.8,138.6,45
+Potato,Punjab,38.8,33.1,41.4,9
+Sugarcane,Punjab,17.7,66.0,6.9,16
+Sugarcane,Uttar Pradesh,20.6,57.7,130.4,20
+Maize,Uttar Pradesh,39.7,43.1,121.0,29
+Cotton,Uttar Pradesh,35.2,47.7,4.2,9
+Maize,Maharashtra,28.1,88.1,98.3,68
+Sugarcane,Uttar Pradesh,32.0,88.0,16.0,51
+Tomato,Maharashtra,27.3,62.0,39.0,30
+Sugarcane,Punjab,22.9,86.5,5.2,40
+Maize,Maharashtra,22.1,86.4,137.1,58
+Maize,Maharashtra,25.0,53.9,126.0,15
+Maize,Uttar Pradesh,17.3,89.5,35.5,42
+Tomato,Haryana,16.5,42.7,108.8,26
+Potato,Haryana,28.4,79.9,66.6,67
+Sugarcane,Punjab,29.8,89.0,19.8,68
+Tomato,Maharashtra,15.2,74.2,12.4,34
+Potato,Punjab,24.0,40.0,116.4,35
+Potato,Uttar Pradesh,25.4,59.5,99.7,52
+Cotton,Haryana,34.3,88.8,117.4,88
+Tomato,Karnataka,33.1,88.9,83.6,83
+Potato,Maharashtra,37.5,45.7,65.5,35
+Sugarcane,Maharashtra,35.9,59.8,57.8,27
+Maize,Haryana,27.9,74.5,102.6,79
+Wheat,Uttar Pradesh,34.3,49.7,125.8,52
+Rice,Haryana,26.1,69.0,31.8,26
+Tomato,Karnataka,31.2,89.4,13.7,54
+Tomato,Karnataka,35.1,63.6,66.9,25
+Rice,Punjab,39.5,60.4,30.4,19
+Tomato,Karnataka,21.4,51.9,18.6,8
+Cotton,Karnataka,36.3,71.4,67.7,74
+Cotton,Uttar Pradesh,24.5,66.2,51.0,34
+Wheat,Maharashtra,30.1,36.0,107.8,42
+Maize,Haryana,36.5,48.8,41.1,17
+Tomato,Haryana,26.9,84.1,87.1,72
+Maize,Punjab,31.6,72.1,138.3,78
+Tomato,Karnataka,36.5,65.9,66.3,29
+Cotton,Uttar Pradesh,29.1,48.8,89.2,38
+Cotton,Karnataka,35.2,30.8,71.9,22
+Tomato,Haryana,31.9,86.8,60.3,73
+Cotton,Karnataka,26.7,62.4,46.7,49
+Rice,Karnataka,21.6,78.8,104.5,54
+Cotton,Uttar Pradesh,33.4,34.4,40.5,26
+Rice,Maharashtra,26.9,86.4,46.9,55
+Rice,Haryana,16.3,85.1,139.3,47
+Wheat,Uttar Pradesh,28.3,68.7,136.0,44
+Wheat,Karnataka,24.5,39.3,121.4,28
+Maize,Uttar Pradesh,29.0,34.8,13.2,32
+Tomato,Punjab,22.0,31.2,139.3,25
+Wheat,Uttar Pradesh,24.5,73.0,111.7,46
+Maize,Uttar Pradesh,38.9,66.3,91.4,33
+Tomato,Karnataka,29.0,51.2,41.2,30
+Tomato,Maharashtra,28.5,50.7,51.6,35
+Potato,Punjab,28.6,49.7,41.1,37
+Maize,Maharashtra,30.8,58.7,105.9,52
+Cotton,Karnataka,19.8,88.4,41.5,57
+Potato,Uttar Pradesh,36.6,61.7,86.6,27
+Maize,Punjab,34.2,60.5,84.9,35
+Tomato,Karnataka,32.3,84.3,21.2,53
+Potato,Karnataka,37.3,51.9,86.1,22
+Wheat,Karnataka,36.6,75.8,73.0,46
+Cotton,Maharashtra,19.7,55.3,43.6,10
+Tomato,Maharashtra,24.2,62.1,13.1,5
+Sugarcane,Punjab,31.9,76.3,102.4,74
+Maize,Haryana,38.7,79.4,72.8,57
+Cotton,Punjab,16.0,41.3,38.5,17
+Sugarcane,Maharashtra,16.2,68.7,8.4,12
+Tomato,Uttar Pradesh,18.4,41.9,109.2,31
+Wheat,Karnataka,31.8,67.6,33.7,40
+Sugarcane,Uttar Pradesh,15.1,79.6,119.0,54
+Sugarcane,Haryana,27.1,64.6,97.3,44
+Tomato,Uttar Pradesh,21.4,70.8,71.0,49
+Rice,Haryana,29.6,59.0,80.0,52
+Sugarcane,Haryana,24.3,39.5,78.7,29
+Potato,Punjab,30.7,66.2,106.5,44
+Potato,Punjab,26.8,76.0,112.0,85
+Wheat,Maharashtra,18.7,75.7,5.1,40
+Cotton,Punjab,35.8,32.3,20.5,20
+Rice,Maharashtra,20.1,83.6,41.3,49
+Cotton,Uttar Pradesh,38.6,69.7,43.4,25
+Tomato,Karnataka,18.7,51.4,114.8,23
+Maize,Maharashtra,25.5,85.8,121.5,73
+Tomato,Maharashtra,25.0,87.9,107.7,59
+Sugarcane,Uttar Pradesh,33.8,42.5,60.7,47
+Cotton,Maharashtra,24.5,38.9,118.8,22
+Sugarcane,Maharashtra,23.3,63.0,98.2,20
+Maize,Maharashtra,27.4,36.9,90.0,38
+Sugarcane,Karnataka,23.0,84.5,31.7,40
+Wheat,Punjab,30.2,30.7,44.1,21
+Potato,Haryana,22.5,33.8,14.5,8
+Maize,Haryana,33.0,38.4,122.5,46
+Potato,Maharashtra,17.8,38.8,108.3,31
+Maize,Maharashtra,22.5,81.7,124.2,51
+Sugarcane,Maharashtra,35.1,38.5,8.2,17
+Sugarcane,Karnataka,18.0,49.0,93.8,34
+Wheat,Haryana,34.4,38.0,12.1,30
+Rice,Maharashtra,24.9,32.6,56.5,31
+Maize,Haryana,25.3,86.4,28.6,54
+Sugarcane,Maharashtra,33.4,50.2,51.0,42
+Tomato,Uttar Pradesh,17.8,41.6,50.4,18
+Cotton,Uttar Pradesh,33.9,86.4,116.4,92
+Wheat,Uttar Pradesh,34.8,87.0,56.5,79
+Potato,Uttar Pradesh,24.9,33.6,133.1,23
+Rice,Uttar Pradesh,36.5,82.1,130.9,53
+Potato,Uttar Pradesh,26.8,88.8,64.0,98
+Potato,Uttar Pradesh,31.8,45.1,39.3,22
+Rice,Punjab,27.2,36.4,54.4,53
+Wheat,Haryana,23.0,59.1,61.9,19
+Maize,Punjab,27.9,72.8,27.5,60
+Sugarcane,Uttar Pradesh,19.4,69.7,89.3,21
+Rice,Karnataka,23.9,58.7,129.8,17
+Maize,Haryana,15.2,52.4,13.2,5
+Tomato,Uttar Pradesh,21.6,89.2,104.6,53
+Potato,Karnataka,21.0,51.7,125.2,17
+Tomato,Karnataka,30.2,80.8,28.3,68
+Sugarcane,Punjab,23.5,65.6,116.8,30
+Sugarcane,Punjab,24.0,70.3,100.6,52
+Rice,Maharashtra,22.0,44.0,125.6,34
+Rice,Punjab,33.7,63.9,90.5,40
+Wheat,Uttar Pradesh,22.9,59.8,3.0,5
+Maize,Punjab,20.8,66.8,4.0,18
+Rice,Punjab,36.3,80.4,126.3,52
+Maize,Uttar Pradesh,16.1,54.8,21.9,0
+Rice,Uttar Pradesh,30.4,67.2,92.9,53
+Sugarcane,Haryana,34.9,75.0,114.4,85
+Maize,Uttar Pradesh,22.8,30.3,49.6,8
+Rice,Maharashtra,28.3,52.6,8.7,26
+Wheat,Haryana,30.3,38.2,102.1,52
+Rice,Punjab,22.2,49.8,85.4,19
+Cotton,Maharashtra,26.7,35.4,149.4,46
+Tomato,Uttar Pradesh,18.2,57.2,78.3,34
+Rice,Uttar Pradesh,25.6,44.6,43.7,24
+Potato,Punjab,34.6,42.0,100.0,40
+Wheat,Karnataka,20.8,54.4,55.8,26
+Sugarcane,Punjab,38.4,68.2,15.3,0
+Potato,Karnataka,34.4,48.4,138.2,52
+Tomato,Haryana,33.8,61.2,96.5,44
+Tomato,Punjab,17.1,89.8,24.4,39
+Cotton,Maharashtra,20.2,77.1,77.9,74
+Cotton,Punjab,36.3,50.6,35.7,20
+Maize,Punjab,24.6,51.0,40.7,14
+Cotton,Haryana,28.5,72.4,63.9,89
+Sugarcane,Punjab,24.3,52.4,113.8,25
+Rice,Maharashtra,33.1,55.3,18.6,37
+Maize,Haryana,32.4,64.4,57.6,45
+Sugarcane,Haryana,34.3,54.4,46.8,33
+Maize,Haryana,22.3,60.8,134.9,21
+Cotton,Karnataka,38.5,65.2,98.2,32
+Maize,Haryana,36.5,48.6,44.5,4
+Maize,Punjab,15.6,84.5,104.6,47
+Potato,Punjab,26.1,61.5,40.5,38
+Maize,Haryana,34.4,59.4,23.8,24
+Rice,Karnataka,35.3,31.3,36.1,19
+Cotton,Maharashtra,18.1,61.9,34.1,16
+Cotton,Maharashtra,32.9,83.2,17.8,70
+Potato,Maharashtra,37.5,30.9,88.5,33
+Rice,Uttar Pradesh,18.1,71.9,23.3,33
+Tomato,Maharashtra,33.8,35.9,123.5,52
+Maize,Maharashtra,34.7,41.1,126.6,48
+Sugarcane,Uttar Pradesh,32.0,79.5,25.1,61
+Rice,Uttar Pradesh,31.2,85.9,107.0,79
+Sugarcane,Uttar Pradesh,22.7,69.4,25.9,18
+Potato,Punjab,33.2,71.3,39.8,58
+Sugarcane,Punjab,24.7,72.5,107.5,58
+Sugarcane,Haryana,16.9,88.5,141.5,55
+Cotton,Haryana,31.1,59.9,122.9,35
+Sugarcane,Uttar Pradesh,20.8,68.4,76.6,32
+Tomato,Karnataka,31.8,60.3,85.5,46
+Potato,Karnataka,33.0,31.0,55.5,55
+Cotton,Maharashtra,26.3,85.6,95.8,82
+Tomato,Uttar Pradesh,39.3,62.4,89.6,27
+Tomato,Karnataka,27.1,80.3,91.8,82
+Wheat,Maharashtra,38.4,42.8,70.7,32
+Cotton,Karnataka,33.7,49.6,26.9,31
+Wheat,Karnataka,18.9,38.8,134.6,34
+Maize,Maharashtra,31.5,58.9,48.2,25
+Cotton,Maharashtra,22.5,52.4,95.7,15
+Maize,Haryana,35.6,34.2,46.4,8
+Maize,Punjab,37.0,45.9,19.3,9
+Sugarcane,Punjab,27.8,36.3,111.4,50
+Rice,Punjab,28.8,68.4,117.8,53
+Cotton,Haryana,36.5,57.2,129.7,17
+Tomato,Maharashtra,29.1,44.6,87.3,50
+Rice,Punjab,32.0,47.8,23.3,31
+Wheat,Maharashtra,33.6,73.7,7.3,53
+Sugarcane,Uttar Pradesh,26.9,34.3,62.1,54
+Potato,Uttar Pradesh,29.2,33.3,69.5,45
+Cotton,Punjab,24.4,59.5,87.7,28
+Maize,Maharashtra,32.7,69.4,4.9,28
+Rice,Haryana,37.5,89.6,89.2,51
+Tomato,Maharashtra,18.1,71.5,115.1,57
+Potato,Karnataka,38.5,88.0,85.7,70
+Sugarcane,Maharashtra,34.5,68.3,94.3,44
+Tomato,Haryana,33.2,69.2,63.9,45
+Wheat,Uttar Pradesh,28.5,32.1,81.3,50
+Cotton,Maharashtra,39.4,71.1,111.9,61
+Maize,Karnataka,18.1,69.8,76.5,23
+Potato,Punjab,31.6,61.3,32.3,21
+Tomato,Karnataka,29.2,53.6,41.4,32
+Maize,Karnataka,16.7,54.6,75.2,35
+Rice,Punjab,29.9,52.7,4.4,35
+Maize,Haryana,18.4,75.6,23.8,37
+Tomato,Karnataka,32.7,47.3,21.0,37
+Cotton,Uttar Pradesh,28.0,53.3,83.8,54
+Wheat,Maharashtra,19.0,73.8,120.7,64
+Sugarcane,Karnataka,38.1,82.2,4.3,46
+Tomato,Maharashtra,22.6,38.5,67.6,29
+Tomato,Maharashtra,19.4,76.5,9.0,38
+Tomato,Karnataka,30.1,52.6,69.5,41
+Rice,Punjab,30.2,73.8,124.9,84
+Cotton,Punjab,26.5,79.0,106.1,86
+Potato,Haryana,38.4,37.5,56.2,25
+Wheat,Uttar Pradesh,32.4,51.4,108.6,45
+Maize,Haryana,17.8,30.9,11.8,6
+Rice,Karnataka,24.0,72.7,147.1,46
+Cotton,Uttar Pradesh,18.8,45.4,94.9,28
+Potato,Uttar Pradesh,15.2,62.2,7.8,3
+Tomato,Uttar Pradesh,31.8,45.8,48.7,23
+Sugarcane,Uttar Pradesh,26.8,52.3,18.9,37
+Sugarcane,Uttar Pradesh,24.7,86.3,7.9,32
+Sugarcane,Punjab,19.3,60.7,87.9,32
+Maize,Haryana,27.0,49.3,32.3,32
+Rice,Haryana,16.0,65.3,54.9,35
+Rice,Punjab,32.8,81.3,13.2,55
+Sugarcane,Haryana,39.2,58.7,1.5,8
+Sugarcane,Maharashtra,28.2,88.7,109.9,70
+Tomato,Haryana,28.5,65.0,138.4,44
+Rice,Uttar Pradesh,33.2,86.7,41.1,60
+Maize,Punjab,16.5,79.6,109.9,63
+Cotton,Karnataka,35.6,70.1,46.8,58
+Rice,Haryana,16.6,59.3,89.4,23
+Potato,Uttar Pradesh,31.9,48.5,13.2,29
+Rice,Punjab,25.3,33.1,33.6,34
+Wheat,Karnataka,15.7,51.1,96.0,27
+Rice,Uttar Pradesh,16.5,39.1,45.5,15
+Wheat,Uttar Pradesh,16.2,79.7,58.6,56
+Cotton,Karnataka,37.4,37.8,4.7,12
+Wheat,Punjab,21.7,76.8,60.3,48
+Maize,Maharashtra,39.4,60.1,64.8,20
+Rice,Punjab,35.9,61.1,74.8,21
+Cotton,Maharashtra,38.3,44.0,142.8,34
+Tomato,Punjab,18.5,59.8,97.4,21
+Sugarcane,Karnataka,22.9,65.5,36.1,14
+Potato,Karnataka,38.5,42.3,136.8,17
+Sugarcane,Maharashtra,33.7,70.8,142.2,74
+Maize,Maharashtra,26.2,32.5,24.8,39
+Maize,Haryana,37.6,64.7,99.3,15
+Potato,Karnataka,19.0,60.8,19.6,6
+Wheat,Uttar Pradesh,34.8,38.9,94.0,38
+Potato,Punjab,28.3,57.0,30.9,25
+Potato,Uttar Pradesh,24.4,73.5,116.4,56
+Sugarcane,Haryana,28.7,41.4,137.2,35
+Maize,Karnataka,28.5,78.3,16.4,62
+Sugarcane,Karnataka,27.6,86.3,58.8,66
+Sugarcane,Haryana,33.2,88.5,100.4,84
+Potato,Punjab,23.5,73.8,111.1,58
+Tomato,Maharashtra,34.1,89.0,88.9,85
+Potato,Punjab,23.2,66.2,100.7,30
+Potato,Punjab,21.1,79.2,95.0,59
+Tomato,Maharashtra,18.8,33.8,67.9,26
+Maize,Karnataka,16.1,64.0,56.0,25
+Wheat,Haryana,24.1,76.0,80.8,48
+Sugarcane,Karnataka,35.0,43.6,115.3,25
+Cotton,Punjab,37.1,47.9,46.7,3
+Potato,Punjab,33.8,59.7,47.9,24
+Potato,Haryana,21.6,60.7,52.2,24
+Cotton,Haryana,38.9,49.0,92.1,25
+Cotton,Punjab,37.7,60.4,56.7,45
+Potato,Haryana,33.4,45.7,37.2,23
+Sugarcane,Punjab,30.2,84.9,51.1,65
+Maize,Punjab,35.7,32.9,40.6,0
+Rice,Karnataka,22.0,33.5,40.6,19
+Cotton,Maharashtra,24.5,32.3,64.9,27
+Tomato,Uttar Pradesh,20.5,85.5,35.0,43
+Tomato,Punjab,24.6,82.9,87.9,48
+Wheat,Punjab,37.0,59.7,23.7,20
+Cotton,Haryana,29.1,78.2,86.1,92
+Rice,Haryana,26.4,30.6,146.9,46
+Wheat,Haryana,34.3,42.2,87.7,38
+Cotton,Maharashtra,37.7,68.3,20.0,23
+Sugarcane,Punjab,37.4,48.3,10.5,14
+Wheat,Karnataka,38.9,61.5,58.9,19
+Potato,Haryana,33.6,83.9,36.6,80
+Maize,Punjab,27.7,71.4,28.4,60
+Cotton,Uttar Pradesh,24.0,39.8,139.9,27
+Tomato,Maharashtra,33.8,78.2,133.5,77
+Rice,Haryana,25.5,72.3,60.1,81
+Wheat,Punjab,31.4,64.5,18.7,26
+Cotton,Karnataka,28.7,65.9,67.4,45
+Wheat,Haryana,21.4,38.9,113.6,16
+Wheat,Haryana,34.9,35.6,137.3,55
+Potato,Punjab,20.2,80.6,131.5,68
+Cotton,Haryana,34.1,54.1,11.2,37
+Maize,Maharashtra,17.4,75.5,98.2,46
+Rice,Haryana,16.9,69.1,15.9,7
+Wheat,Punjab,23.5,60.0,79.7,23
+Rice,Haryana,18.5,89.6,116.6,65
+Maize,Uttar Pradesh,38.3,61.6,130.3,33
+Maize,Maharashtra,35.7,30.1,53.5,15
+Maize,Maharashtra,19.6,53.0,115.4,20
+Rice,Punjab,31.7,52.7,42.5,30
+Tomato,Uttar Pradesh,28.0,86.1,55.0,77
+Cotton,Karnataka,29.3,54.6,108.3,53
+Maize,Uttar Pradesh,38.2,65.0,28.9,2
+Wheat,Punjab,20.4,71.7,36.2,42
+Potato,Haryana,30.9,62.9,82.0,43
+Sugarcane,Maharashtra,16.0,78.1,64.5,50
+Potato,Punjab,36.3,61.1,1.3,19
+Maize,Maharashtra,25.5,70.8,39.4,67
+Maize,Maharashtra,30.6,78.3,53.2,73
+Potato,Punjab,27.3,87.9,43.3,88
+Potato,Punjab,20.6,56.9,47.6,3
+Cotton,Uttar Pradesh,22.9,47.0,8.4,19
+Cotton,Karnataka,33.8,88.3,132.5,90
+Sugarcane,Punjab,16.3,81.6,146.6,61
+Wheat,Uttar Pradesh,31.7,72.0,118.2,84
+Potato,Maharashtra,37.5,34.3,126.9,30
+Tomato,Haryana,34.9,43.1,76.1,37
+Wheat,Karnataka,31.3,76.1,10.1,59
+Cotton,Haryana,29.3,49.8,120.1,53
+Wheat,Punjab,18.0,68.1,78.4,18
+Rice,Haryana,18.1,68.4,106.2,27
+Maize,Karnataka,28.3,57.5,140.0,37
+Sugarcane,Haryana,28.1,31.7,109.4,39
+Potato,Haryana,21.4,35.2,134.4,15
+Potato,Uttar Pradesh,27.5,83.0,93.0,95
+Tomato,Punjab,25.5,39.9,143.9,48
+Potato,Maharashtra,38.8,73.8,28.6,33
+Rice,Haryana,15.1,58.4,124.5,34
+Maize,Karnataka,15.1,57.9,146.5,17
+Tomato,Haryana,39.9,50.8,90.6,32
+Sugarcane,Maharashtra,31.1,53.1,130.1,48
+Tomato,Maharashtra,34.8,73.9,2.9,67
+Potato,Punjab,19.3,83.1,126.3,84
+Maize,Punjab,39.8,50.0,115.3,23
+Cotton,Uttar Pradesh,38.5,61.8,57.1,38
+Tomato,Uttar Pradesh,38.0,73.7,129.6,51
+Tomato,Uttar Pradesh,28.9,79.5,57.6,68
+Potato,Karnataka,21.3,38.5,13.6,10
+Cotton,Maharashtra,31.8,37.3,119.4,49
+Cotton,Maharashtra,16.6,68.2,92.2,36
+Tomato,Haryana,28.9,72.7,120.8,80
+Tomato,Karnataka,31.3,70.5,56.8,80
+Tomato,Uttar Pradesh,33.8,50.5,95.0,54
+Tomato,Uttar Pradesh,17.9,87.7,22.9,45
+Wheat,Haryana,17.3,60.4,137.8,18
+Sugarcane,Maharashtra,20.8,47.0,104.3,31
+Sugarcane,Karnataka,15.1,73.6,37.6,47
+Wheat,Karnataka,32.8,52.6,10.5,23
+Wheat,Uttar Pradesh,36.0,81.4,148.5,52
+Tomato,Uttar Pradesh,21.1,88.6,110.5,50
+Potato,Haryana,25.2,69.9,23.8,38
+Wheat,Maharashtra,19.7,42.8,62.2,17
+Tomato,Karnataka,17.3,80.5,99.2,50
+Sugarcane,Punjab,35.2,77.8,53.6,62
+Rice,Karnataka,28.6,31.1,74.5,44
+Rice,Haryana,32.9,75.1,141.8,69
+Wheat,Karnataka,17.7,86.8,22.5,36
+Rice,Uttar Pradesh,23.1,67.2,14.7,2
+Rice,Haryana,30.7,70.9,122.5,65
+Cotton,Punjab,15.4,76.9,7.8,41
+Rice,Maharashtra,36.8,54.6,130.4,22
+Maize,Karnataka,15.8,85.1,73.9,45
+Maize,Uttar Pradesh,31.9,82.9,125.5,68
+Cotton,Karnataka,34.7,31.0,65.7,50
+Potato,Punjab,29.2,43.8,77.5,52

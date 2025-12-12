@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from 'recharts';
-import Navbar from '../components/Navbar';
+
 import './Dashboard.css'; // Reusing dashboard styles for consistency
 
 const Analytics = () => {
@@ -45,7 +45,7 @@ const Analytics = () => {
 
     return (
         <div className="dashboard-container">
-            <Navbar />
+
             <div className="content-wrapper">
                 <div style={{ width: '100%', marginBottom: '20px' }}>
                     <h2>📊 Market Analytics</h2>
